@@ -401,15 +401,8 @@ int main(void)
 		/* ªÒ»° SPI Flash ID */
 	
 	
-	FlashID = SPI_FLASH_ReadID();
-	if (FlashID == sFLASH_ID) 
-	{
-//		Delay(500);
-		Read_flag();
-		Read_Sflag();
-		Read_Flash_Init_Handle();
-	}
-	power_on();
+	
+	
 //	watch = CRC16(test,9);
 //	page_home();
 //	watch = sizeof(TempHLimits);
@@ -424,6 +417,15 @@ int main(void)
 //	SD_GetCardInfo(&SDINFO);
 //	Read_Block_Rec();
 //	BlockNum.Num[0] = 0;
+	FlashID = SPI_FLASH_ReadID();
+	if (FlashID == sFLASH_ID) 
+	{
+//		Delay(500);
+		Read_flag();
+		Read_Sflag();
+		Read_Flash_Init_Handle();
+	}
+	power_on();
 	while(1)
 	{
 

@@ -2220,51 +2220,197 @@ void Key_Handle(void)
 		default:break;
 	}
 }
+////按键功能
+//void Key_Function(void)
+//{	
+//	static u8 key_old;
+//	static u8 key_new;
+//	static u8 longflag;
+//	static u16 presscount;
+//	key_new = key_value;
+//	if(key_value != 0XFF)
+//	{		
+//		if(key_old != key_new && keystat == 0)
+//		{
+//			Key_Handle();
+//			keystat = 1;
+//			key_old = key_value;
+//		}else if(key_old == key_new && keystat == 1){
+//			presscount ++;
+//			if(longflag == 0)
+//			{
+//				if(presscount == 150)
+//				{
+//					Key_Handle();
+//					longflag = 1;
+//					presscount = 0;
+//				}
+//			}else{
+//				if(presscount == 50)
+//				{
+//					Key_Handle();
+//					presscount = 0;
+//				}
+//			}
+//			
+//		}			
+//	}else{
+//		keystat = 0;
+//		key_value = 0xff;
+//		key_old = 0;
+//		presscount = 0;
+//		longflag = 0;
+//	}		
+//	
+
+//}
 //按键功能
 void Key_Function(void)
 {	
 	static u8 key_old;
 	static u8 key_new;
-	static u8 longflag;
-	static u16 presscount;
 	key_new = key_value;
 	if(key_value != 0XFF)
 	{		
 		if(key_old != key_new && keystat == 0)
 		{
-			Key_Handle();
+			ButtonSound();//按键音
+			switch(key_value)
+			{
+				case KEY_1:
+				{
+					KEY1_HANDLE();
+				}
+				break;
+				case KEY_2:
+				{
+					KEY2_HANDLE();
+				}
+				break;
+				case KEY_3:
+				{
+					KEY3_HANDLE();
+				}
+				break;
+				case KEY_4:
+				{
+					KEY4_HANDLE();
+				}
+				break;
+				case KEY_5:
+				{
+					KEY5_HANDLE();
+				}
+				break;
+				case KEY_6:
+				{
+					KEY6_HANDLE();
+				}
+				break;
+				case KEY_7:
+				{
+					KEY7_HANDLE();
+				}
+				break;
+				case KEY_8:
+				{
+					KEY8_HANDLE();
+				}
+				break;
+				case KEY_9:
+				{
+					KEY9_HANDLE();
+				}
+				break;
+				case KEY_0:
+				{
+					KEY0_HANDLE();
+				}
+				break;
+				case KEY_ACC:
+				{
+					ACC_HANDLE();
+				}
+				break;
+				case KEY_BACK:
+				{
+					BACK_HANDLE();
+				}
+				break;
+				case KEY_DOT:
+				{
+					DOT_HANDLE();
+				}
+				break;
+				case KEY_UP:
+				{
+					UP_HANDLE();
+				}
+				break;
+				case KEY_DOWN:
+				{
+					DOWN_HANDLE();
+				}
+				break;
+				case KEY_LEFT:
+				{
+					LEFT_HANDLE();
+				}
+				break;
+				case KEY_RIGHT:
+				{
+					RIGHT_HANDLE();
+				}
+				break;
+				case KEY_ENTER:
+				{
+					ENTER_HANDLE();
+					count_flag = 1;
+				}
+				break;
+				case KEY_ESC:
+				{
+					ESC_HANDLE();
+				}
+				break;
+				case KEY_FUNC1:
+				{					
+					FUNC1_HANDLE();
+				}
+				break;
+				case KEY_FUNC2:
+				{
+					FUNC2_HANDLE();
+				}
+				break;
+				case KEY_FUNC3:
+				{
+					FUNC3_HANDLE();
+				}
+				break;
+				case KEY_FUNC4:
+				{
+					FUNC4_HANDLE();
+				}
+				break;
+				case KEY_FUNC5:
+				{
+					FUNC5_HANDLE();
+				}
+				break;
+				default:break;
+			}
 			keystat = 1;
 			key_old = key_value;
-		}else if(key_old == key_new && keystat == 1){
-			presscount ++;
-			if(longflag == 0)
-			{
-				if(presscount == 150)
-				{
-					Key_Handle();
-					longflag = 1;
-					presscount = 0;
-				}
-			}else{
-				if(presscount == 50)
-				{
-					Key_Handle();
-					presscount = 0;
-				}
-			}
-			
 		}			
 	}else{
 		keystat = 0;
 		key_value = 0xff;
 		key_old = 0;
-		presscount = 0;
-		longflag = 0;
 	}		
 	
 
 }
-
 
 /*按键功能函数FUNC_1*/
 void FUNC1_HANDLE(void)
