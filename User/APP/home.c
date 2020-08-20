@@ -1185,44 +1185,44 @@ void Disp_Type(void)
 			DISP_AVG(360,590,pt[CH16TYPE-1]);
 		}
 	}else if(FONT == middle){
-			DISP_AVG(112,187,"   ");
-			DISP_AVG(152,187,"   ");
-			DISP_AVG(192,187,"   ");
-			DISP_AVG(232,187,"   ");
-			DISP_AVG(272,187,"   ");
-			DISP_AVG(312,187,"   ");
-			DISP_AVG(352,187,"   ");
-			DISP_AVG(392,187,"   ");
+			DISP_AVG(112,190,"   ");
+			DISP_AVG(152,190,"   ");
+			DISP_AVG(192,190,"   ");
+			DISP_AVG(232,190,"   ");
+			DISP_AVG(272,190,"   ");
+			DISP_AVG(312,190,"   ");
+			DISP_AVG(352,190,"   ");
+			DISP_AVG(392,190,"   ");
 			if(CHNUM == 16)
 			{
-				DISP_AVG(112,387,"   ");
-				DISP_AVG(152,387,"   ");
-				DISP_AVG(192,387,"   ");
-				DISP_AVG(232,387,"   ");
-				DISP_AVG(272,387,"   ");
-				DISP_AVG(312,387,"   ");
-				DISP_AVG(352,387,"   ");
-				DISP_AVG(392,387,"   ");
+				DISP_AVG(112,510,"   ");
+				DISP_AVG(152,510,"   ");
+				DISP_AVG(192,510,"   ");
+				DISP_AVG(232,510,"   ");
+				DISP_AVG(272,510,"   ");
+				DISP_AVG(312,510,"   ");
+				DISP_AVG(352,510,"   ");
+				DISP_AVG(392,510,"   ");
 			}
 			
-			DISP_AVG(112,187,pt[CH1TYPE-1]);
-			DISP_AVG(152,187,pt[CH2TYPE-1]);
-			DISP_AVG(192,187,pt[CH3TYPE-1]);
-			DISP_AVG(232,187,pt[CH4TYPE-1]);
-			DISP_AVG(272,187,pt[CH5TYPE-1]);
-			DISP_AVG(312,187,pt[CH6TYPE-1]);
-			DISP_AVG(352,187,pt[CH7TYPE-1]);
-			DISP_AVG(392,187,pt[CH8TYPE-1]);
+			DISP_AVG(112,190,pt[CH1TYPE-1]);
+			DISP_AVG(152,190,pt[CH2TYPE-1]);
+			DISP_AVG(192,190,pt[CH3TYPE-1]);
+			DISP_AVG(232,190,pt[CH4TYPE-1]);
+			DISP_AVG(272,190,pt[CH5TYPE-1]);
+			DISP_AVG(312,190,pt[CH6TYPE-1]);
+			DISP_AVG(352,190,pt[CH7TYPE-1]);
+			DISP_AVG(392,190,pt[CH8TYPE-1]);
 			if(CHNUM == 16)
 			{
-				DISP_AVG(112,387,pt[CH9TYPE-1]);
-				DISP_AVG(152,387,pt[CH10TYPE-1]);
-				DISP_AVG(192,387,pt[CH11TYPE-1]);
-				DISP_AVG(232,387,pt[CH12TYPE-1]);
-				DISP_AVG(272,387,pt[CH13TYPE-1]);
-				DISP_AVG(312,387,pt[CH14TYPE-1]);
-				DISP_AVG(352,387,pt[CH15TYPE-1]);
-				DISP_AVG(392,387,pt[CH16TYPE-1]);
+				DISP_AVG(112,510,pt[CH9TYPE-1]);
+				DISP_AVG(152,510,pt[CH10TYPE-1]);
+				DISP_AVG(192,510,pt[CH11TYPE-1]);
+				DISP_AVG(232,510,pt[CH12TYPE-1]);
+				DISP_AVG(272,510,pt[CH13TYPE-1]);
+				DISP_AVG(312,510,pt[CH14TYPE-1]);
+				DISP_AVG(352,510,pt[CH15TYPE-1]);
+				DISP_AVG(392,510,pt[CH16TYPE-1]);
 			}
 	}else if(FONT == small){
 			DISP_AVG(104,115,"  ");
