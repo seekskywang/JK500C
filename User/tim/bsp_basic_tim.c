@@ -33,12 +33,14 @@ extern u8 key_value;
 extern u16 count;
 extern u8 count_flag;
 extern u8 uartflag;
+extern u16 ucount;
 u8 tempreq[9] = {0x01,0x03,0x00,0x00,0x00,0x10,0x44,0x06,0xff};
 u8 reqcode;
 u8 brightness;
 u32 Tick_10ms=0;
 u32 OldTick;
 u8 udflag;
+u32 syscount;
 extern u8 ReCount;
 extern u8 g_mods_timeout;
 extern __ALIGN_BEGIN USB_OTG_CORE_HANDLE  USB_OTG_dev __ALIGN_END;
@@ -418,6 +420,17 @@ void BASIC_TIM_IRQHandler (void)
 ////			}
 ////			usave = 0;
 //		}
+		if(usbstatus == CONNECTED)
+		{
+			syscount++;
+			if(syscount > 99)
+			{
+				ucount++;
+				syscount = 0;
+			}
+		}else{
+			syscount = 0;
+		}
 		if(key_value == 0xFF && dimflag == 0)
 		{			
 			if(DIM == DOFF)

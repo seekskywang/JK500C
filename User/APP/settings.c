@@ -259,8 +259,8 @@ void page_set(void)
 	}
 	
 //	LCD_DisplayStringLine(317,150,"1");
-	stimefocus_off(SAVETIME);
-	LCD_DisplayStringLine(319,166,"S");
+	stimefocus_off(usavetime[0]);
+	LCD_DisplayStringLine(319,182,"S");
 	
 	if(LANG == chs)
 	{

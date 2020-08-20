@@ -828,7 +828,7 @@ void stimefocus_on(int lmt)
 	char buf[10];
 	
 	LCD_SetColors(LCD_COLOR_YELLOW,LCD_COLOR_YELLOW);
-	LCD_DrawFullRect(118,317,48,31);
+	LCD_DrawFullRect(102,317,64,31);
 	LCD_SetTextColor(LCD_COLOR_BLACK);
 	LCD_SetBackColor(LCD_COLOR_YELLOW);
 	
@@ -843,6 +843,9 @@ void stimefocus_on(int lmt)
 	}else if(i >=10 && i < 100){
 		sprintf(buf,"%d",lmt);
 		LCD_DisplayStringLine(317,118,(uint8_t* )buf);
+	}else if(i >=10 && i < 1000){
+		sprintf(buf,"%d",lmt);
+		LCD_DisplayStringLine(317,102,(uint8_t* )buf);
 	}
 	if(LANG == chs)
 	{
@@ -859,7 +862,7 @@ void stimefocus_off(int lmt)
 	char buf[10];
 	
 	LCD_SetColors(LCD_COLOR_BACK,LCD_COLOR_BACK);
-	LCD_DrawFullRect(118,317,48,31);
+	LCD_DrawFullRect(102,317,64,31);
 	LCD_SetTextColor(LCD_COLOR_YELLOW);
 	LCD_SetBackColor(LCD_COLOR_BACK);
 	
@@ -873,6 +876,9 @@ void stimefocus_off(int lmt)
 	}else if(i >=10 && i < 100){
 		sprintf(buf,"%d",lmt);
 		LCD_DisplayStringLine(317,118,(uint8_t* )buf);
+	}else if(i >=10 && i < 1000){
+		sprintf(buf,"%d",lmt);
+		LCD_DisplayStringLine(317,102,(uint8_t* )buf);
 	}
 }
 
@@ -8606,12 +8612,12 @@ void ENTER_HANDLE(void)
 				}break;
 				case set_timer:
 				{
-					SAVETIME = atoi(data);
-					if(SAVETIME > 255)
+					usavetime[0] = atoi(data);
+					if(usavetime[0] > 9999)
 					{
-						SAVETIME = 255;
+						usavetime[0] = 9999;
 					}
-					stimefocus_on(SAVETIME);
+					stimefocus_on(usavetime[0]);
 					Save_flag();
 				}break;
 			}
@@ -10610,7 +10616,7 @@ void UP_HANDLE(void)
 				}break;
 				case set_timer:
 				{
-					stimefocus_off(SAVETIME);
+					stimefocus_off(usavetime[0]);
 //					LCD_DisplayStringLine(317,150,"1");
 //					LCD_DisplayStringLine(322,516,"S");
 					focus_on1();
@@ -12841,7 +12847,7 @@ void DOWN_HANDLE(void)
 							ENDM);
 					LCD_DisplayStringLine(248,150,(uint8_t *)buf);
 					
-					stimefocus_on(SAVETIME);
+					stimefocus_on(usavetime[0]);
 					if(LANG == chs)
 					{
 						DrawInstruction("记录间隔时间");

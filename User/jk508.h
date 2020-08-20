@@ -89,6 +89,7 @@ extern FRESULT res_sd;
 extern SAVE_SD SaveBuffer;
 extern SAVE_SD ReadBuffer;
 extern u16 hiscursor;
+extern u16 usavetime[2];
 
 void page_home(void);
 void page_set(void);

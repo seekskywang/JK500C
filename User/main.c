@@ -54,6 +54,7 @@ u8 savedata[80];
 u8 uinfo[64];
 u8 trigtime[4];
 u8 chcomp[40];
+u16 usavetime[2];
 //u8 usbreadtime = 0;
 u8 eqmtstatus;
 u16 crcwatch;
@@ -67,6 +68,7 @@ u16 ureadcrc;
 u8 *ucrc;
 extern u8 uartflag;
 SD_CardInfo SDINFO;
+u16 ucount;
 //u8 p1,p2,p3,p4,p5,p6,p7,p8;
 //char filename[20];
 //char foldername[20];
@@ -300,7 +302,7 @@ int main(void)
 	u8 test[9] = {0X01,0X03,0X02,0X58,0X00,0X01,0X02,0X00,0X05};
 	 __IO uint32_t i = 0;
 	static u8 reqtempcount;
-	static u16 ucount;
+
 	static u8 urecount;
 	static u16 usavecount;
 	static u16 sendcount;
@@ -505,14 +507,16 @@ int main(void)
 				}					
 				if(usbstatus == CONNECTED)
 				{
-					if(ucount ==4*SAVETIME)
+					if(ucount == usavetime[0])
 					{
 						Utest();
 						ucount = 0;
-					}else{
-						ucount ++;
 					}
+//					else{
+//						ucount ++;
+//					}
 				}else{
+					ucount = 0;
 					fileflag = 0;
 				}
 				uartflag = 0;
@@ -2680,6 +2684,7 @@ void Save_flag(void)
 	SPI_FLASH_BufferWrite((void*)corpara,SPI_FLASH_PageSize*5, sizeof(corpara));
 	SPI_FLASH_BufferWrite((void*)SN,SPI_FLASH_PageSize*6, sizeof(SN));
 	SPI_FLASH_BufferWrite((u8 *)ptt,SPI_FLASH_PageSize*7, sizeof(Touch_save));
+	SPI_FLASH_BufferWrite((void*)usavetime,SPI_FLASH_PageSize*8, sizeof(usavetime));
 //	Save_Sflag();
 }
 
@@ -2696,6 +2701,7 @@ void Read_flag(void)
 	SPI_FLASH_BufferRead((void*)corpara,SPI_FLASH_PageSize*5, sizeof(corpara));
 	SPI_FLASH_BufferRead((void*)SN,SPI_FLASH_PageSize*6, sizeof(SN));
 	SPI_FLASH_BufferRead((u8 *)ptt,SPI_FLASH_PageSize*7, sizeof(Touch_save));
+	SPI_FLASH_BufferRead((void*)usavetime,SPI_FLASH_PageSize*8, sizeof(usavetime));
 	Read_Sflag();
 	//	Read_history();
 }
