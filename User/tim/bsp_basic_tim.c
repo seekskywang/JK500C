@@ -423,7 +423,7 @@ void BASIC_TIM_IRQHandler (void)
 		if(usbstatus == CONNECTED)
 		{
 			syscount++;
-			if(syscount > 99)
+			if(syscount > 92)
 			{
 				ucount++;
 				syscount = 0;
