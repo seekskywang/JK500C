@@ -890,7 +890,16 @@ void TouchHandle(u16 x,u16 y)
 						}break;
 						default:
 						{
-							page_sys();
+//							if(recordflag == 0)
+//							{
+//								recordflag = 1;
+//								Drawhomemenu();
+//							}else if(recordflag == 1){
+//								Write_His_Data_Man();
+//								recordflag = 0;
+//								Drawhomemenu();
+//								Write_Block_Rec();					
+//							}
 						}break;
 					}
 					press = 1;
@@ -957,17 +966,20 @@ void TouchHandle(u16 x,u16 y)
 						}break;
 						case type_2:
 						{
-//							DrawMenu();//重绘菜单栏
-//							LCD_SetTextColor(LCD_COLOR_YELLOW);
-//							LCD_SetBackColor(LCD_COLOR_BLACK);
-//							LCD_DisplayStringLine(450,35,"PT100");
-//							if(LANG == chs)
-//							{
-//								LCD_DisplayStringLine(450,550,"更多");
-//							}else{
-//								LCD_DisplayStringLine(450,550,"MORE");
-//							}
-//							op_flag = type_3;
+							DrawMenu();//重绘菜单栏
+							LCD_SetTextColor(LCD_COLOR_YELLOW);
+							LCD_SetBackColor(LCD_COLOR_BLACK);
+							LCD_DisplayStringLine(450,35,"PT100");
+							if(LANG == chs)
+							{
+								LCD_DisplayStringLine(450,550,"更多");
+							}else{
+								LCD_DisplayStringLine(450,550,"MORE");
+							}
+							op_flag = type_3;						
+						}break;
+						case type_3:
+						{
 							DrawMenu();//重绘菜单栏
 							LCD_SetTextColor(LCD_COLOR_YELLOW);
 							LCD_SetBackColor(LCD_COLOR_BLACK);
@@ -981,25 +993,8 @@ void TouchHandle(u16 x,u16 y)
 							}else{
 								LCD_DisplayStringLine(450,550,"MORE");
 							}
-							op_flag = type_1;							
-						}break;
-//						case type_3:
-//						{
-//							DrawMenu();//重绘菜单栏
-//							LCD_SetTextColor(LCD_COLOR_YELLOW);
-//							LCD_SetBackColor(LCD_COLOR_BLACK);
-//							LCD_DisplayStringLine(450,35,"TC-T");
-//							LCD_DisplayStringLine(450,157,"TC-K");
-//							LCD_DisplayStringLine(450,295,"TC-J");
-//							LCD_DisplayStringLine(450,420,"TC-N");
-//							if(LANG == chs)
-//							{
-//								LCD_DisplayStringLine(450,550,"更多");
-//							}else{
-//								LCD_DisplayStringLine(450,550,"MORE");
-//							}
-//							op_flag = type_1;						
-//						}break;						
+							op_flag = type_1;						
+						}break;						
 					}
 					press = 1;
 					ButtonSound();//按键音
@@ -3938,88 +3933,88 @@ void ChannelSwtichMid(void)
 			{
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_LIGHTGREY);
-				DISP_CNL_M(100,210,"009");
+				DISP_CNL_M(100,330,"009");
 			}else if(CH9_SW == ch_on){
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_HLT);
-				DISP_CNL_M(100,210,"009");
+				DISP_CNL_M(100,330,"009");
 			}
 			
 			if(CH10_SW == ch_off)
 			{
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_LIGHTGREY);
-				DISP_CNL_M(140,210,"010");
+				DISP_CNL_M(140,330,"010");
 			}else if(CH10_SW == ch_on){
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_HLT);
-				DISP_CNL_M(140,210,"010");
+				DISP_CNL_M(140,330,"010");
 			}
 			
 			if(CH11_SW == ch_off)
 			{
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_LIGHTGREY);
-				DISP_CNL_M(180,210,"011");
+				DISP_CNL_M(180,330,"011");
 			}else if(CH11_SW == ch_on){
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_HLT);
-				DISP_CNL_M(180,210,"011");
+				DISP_CNL_M(180,330,"011");
 			}
 			
 			if(CH12_SW == ch_off)
 			{
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_LIGHTGREY);
-				DISP_CNL_M(220,210,"012");
+				DISP_CNL_M(220,330,"012");
 			}else if(CH12_SW == ch_on){
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_HLT);
-				DISP_CNL_M(220,210,"012");
+				DISP_CNL_M(220,330,"012");
 			}
 			
 			if(CH13_SW == ch_off)
 			{
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_LIGHTGREY);
-				DISP_CNL_M(260,210,"013");
+				DISP_CNL_M(260,330,"013");
 			}else if(CH13_SW == ch_on){
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_HLT);
-				DISP_CNL_M(260,210,"013");
+				DISP_CNL_M(260,330,"013");
 			}
 			
 			if(CH14_SW == ch_off)
 			{
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_LIGHTGREY);
-				DISP_CNL_M(300,210,"014");
+				DISP_CNL_M(300,330,"014");
 			}else if(CH14_SW == ch_on){
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_HLT);
-				DISP_CNL_M(300,210,"014");
+				DISP_CNL_M(300,330,"014");
 			}
 			
 			if(CH15_SW == ch_off)
 			{
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_LIGHTGREY);
-				DISP_CNL_M(340,210,"015");
+				DISP_CNL_M(340,330,"015");
 			}else if(CH15_SW == ch_on){
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_HLT);
-				DISP_CNL_M(340,210,"015");
+				DISP_CNL_M(340,330,"015");
 			}
 			
 			if(CH16_SW == ch_off)
 			{
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_LIGHTGREY);
-				DISP_CNL_M(380,210,"016");
+				DISP_CNL_M(380,330,"016");
 			}else if(CH16_SW == ch_on){
 				LCD_SetBackColor(LCD_COLOR_BACK);
 				LCD_SetTextColor(LCD_COLOR_HLT);
-				DISP_CNL_M(380,210,"016");
+				DISP_CNL_M(380,330,"016");
 			}
 		}
 		if(CHNUM > 16)

@@ -408,8 +408,7 @@ int main(void)
 //	watch = CRC16(test,9);
 //	page_home();
 //	watch = sizeof(TempHLimits);
-	Touch_GPIO_Config();
-	tp_dev.init();
+	
 //	if(SD_Init() == SD_OK)//≥ı ºªØSDø®
 //	{
 //		DrawSD2();
@@ -427,6 +426,8 @@ int main(void)
 		Read_Sflag();
 		Read_Flash_Init_Handle();
 	}
+	Touch_GPIO_Config();
+	tp_dev.init();
 	power_on();
 	while(1)
 	{
