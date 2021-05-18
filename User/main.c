@@ -3543,7 +3543,7 @@ void AVGCAL(void)
 	u8 chnum = 0;
 	float temp = 0;
 	u8 extflag;
-	TEMPMAX = 0;
+	TEMPMAX = -200;
 	TEMPMIN = 1999;
 	for(i=0;i<CHNUM;i++)
 	{
