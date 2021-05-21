@@ -2,7 +2,7 @@
 ..\..\output\graph.o: ..\..\User\./led/bsp_led.h
 ..\..\output\graph.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 ..\..\output\graph.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
-..\..\output\graph.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\graph.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\graph.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
 ..\..\output\graph.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
 ..\..\output\graph.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
@@ -40,15 +40,15 @@
 ..\..\output\graph.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
 ..\..\output\graph.o: ..\..\User\./lcd/bsp_lcd.h
 ..\..\output\graph.o: ..\..\User\./sdram/bsp_sdram.h
-..\..\output\graph.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\graph.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\graph.o: ..\..\User\./font/fonts.h
 ..\..\output\graph.o: ..\..\User\./key/bsp_key.h
 ..\..\output\graph.o: ..\..\User\./beep/bsp_beep.h
 ..\..\output\graph.o: ..\..\User\./tim/bsp_basic_tim.h
 ..\..\output\graph.o: ..\..\User\jk508.h
-..\..\output\graph.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\graph.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\..\output\graph.o: ..\..\User\FATFS\ff.h
 ..\..\output\graph.o: ..\..\User\FATFS\integer.h
 ..\..\output\graph.o: ..\..\User\FATFS\ffconf.h
-..\..\output\graph.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\graph.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\..\output\graph.o: ..\..\User\./RTC/bsp_rtc.h

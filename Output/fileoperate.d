@@ -1,7 +1,7 @@
 ..\..\output\fileoperate.o: ..\..\User\fileoperate.c
 ..\..\output\fileoperate.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 ..\..\output\fileoperate.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
-..\..\output\fileoperate.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\fileoperate.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\fileoperate.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
 ..\..\output\fileoperate.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
 ..\..\output\fileoperate.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
@@ -41,10 +41,10 @@
 ..\..\output\fileoperate.o: ..\..\User\FATFS\integer.h
 ..\..\output\fileoperate.o: ..\..\User\FATFS\ffconf.h
 ..\..\output\fileoperate.o: ..\..\User\jk508.h
-..\..\output\fileoperate.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\..\output\fileoperate.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\fileoperate.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\fileoperate.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\..\output\fileoperate.o: ..\..\User\./lcd/bsp_lcd.h
 ..\..\output\fileoperate.o: ..\..\User\./sdram/bsp_sdram.h
-..\..\output\fileoperate.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\fileoperate.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\fileoperate.o: ..\..\User\./font/fonts.h
 ..\..\output\fileoperate.o: ..\..\User\sdio/bsp_sdio_sd.h

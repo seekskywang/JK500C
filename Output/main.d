@@ -1,7 +1,7 @@
 ..\..\output\main.o: ..\..\User\main.c
 ..\..\output\main.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 ..\..\output\main.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
-..\..\output\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\main.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
 ..\..\output\main.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
 ..\..\output\main.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
@@ -39,7 +39,7 @@
 ..\..\output\main.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
 ..\..\output\main.o: ..\..\User\./led/bsp_led.h
 ..\..\output\main.o: ..\..\User\./usart/bsp_debug_usart.h
-..\..\output\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\main.o: ..\..\User\./sdram/bsp_sdram.h
 ..\..\output\main.o: ..\..\User\./lcd/bsp_lcd.h
 ..\..\output\main.o: ..\..\User\./font/fonts.h
@@ -50,11 +50,11 @@
 ..\..\output\main.o: ..\..\User\./systick/bsp_SysTick.h
 ..\..\output\main.o: ..\..\User\./RTC/bsp_rtc.h
 ..\..\output\main.o: ..\..\User\jk508.h
-..\..\output\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\..\output\main.o: ..\..\User\FATFS\ff.h
 ..\..\output\main.o: ..\..\User\FATFS\integer.h
 ..\..\output\main.o: ..\..\User\FATFS\ffconf.h
-..\..\output\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\main.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\..\output\main.o: ..\..\USBD_FS_HID\usbd_hid_core.h
 ..\..\output\main.o: ..\..\USBD_FS_Lib\USBD_inc\usbd_ioreq.h
 ..\..\output\main.o: ..\..\USBD_FS_Lib\USBD_inc\usbd_def.h

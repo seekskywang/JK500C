@@ -6,7 +6,7 @@
 ..\..\output\diskio.o: ..\..\User\sdio/bsp_sdio_sd.h
 ..\..\output\diskio.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 ..\..\output\diskio.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
-..\..\output\diskio.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\diskio.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\diskio.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
 ..\..\output\diskio.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
 ..\..\output\diskio.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
@@ -42,4 +42,4 @@
 ..\..\output\diskio.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmc.h
 ..\..\output\diskio.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_ltdc.h
 ..\..\output\diskio.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
-..\..\output\diskio.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\diskio.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
