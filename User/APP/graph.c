@@ -81,7 +81,7 @@ void page_graph(void)
 	for(i = 0;i < 7;i ++)
 	{
 		sprintf(buf,"%d",(int)(YHLIMIT - range * i));
-		DISP_CNL_S(40 + 50*i,5/*90*/,(uint8_t* )buf);
+		DISP_CNL_S(40 + 50*i,0/*90*/,(uint8_t* )buf);
 	}
 	
 	
@@ -100,84 +100,84 @@ void page_graph(void)
 //			{
 //				G_Data[0][j+1] = YHLIMIT;
 //			}
-			LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[0][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[0][j+1] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[0][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[0][j+1] - YLLIMIT)*enrate)));
 		}
 		if(CH2_SW == ch_on && G_Data[1][j] < YHLIMIT && G_Data[1][j] > YLLIMIT && G_Data[1][j+1] < YHLIMIT && G_Data[1][j+1] > YLLIMIT)
 		{         
 			LCD_SetColors(LCD_COLOR_GREEN,LCD_COLOR_BACK);
-			LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[1][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[1][j+1] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[1][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[1][j+1] - YLLIMIT)*enrate)));
 		}
 		if(CH3_SW == ch_on && G_Data[2][j] < YHLIMIT && G_Data[2][j] > YLLIMIT && G_Data[2][j+1] < YHLIMIT && G_Data[2][j+1] > YLLIMIT)
 		{
 			LCD_SetColors(LCD_COLOR_MAGENTA,LCD_COLOR_BACK);
-			LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[2][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[2][j+1] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[2][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[2][j+1] - YLLIMIT)*enrate)));
 		}
 		if(CH4_SW == ch_on && G_Data[3][j] < YHLIMIT && G_Data[3][j] > YLLIMIT && G_Data[3][j+1] < YHLIMIT && G_Data[3][j+1] > YLLIMIT)
 		{
 			LCD_SetColors(LCD_COLOR_CYAN,LCD_COLOR_BACK);
-			LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[3][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[3][j+1] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[3][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[3][j+1] - YLLIMIT)*enrate)));
 		}		
 		if(CH5_SW == ch_on && G_Data[4][j] < YHLIMIT && G_Data[4][j] > YLLIMIT && G_Data[4][j+1] < YHLIMIT && G_Data[4][j+1] > YLLIMIT)
 		{
 			LCD_SetColors(LCD_COLOR_YELLOW,LCD_COLOR_BACK);
-			LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[4][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[4][j+1] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[4][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[4][j+1] - YLLIMIT)*enrate)));
 		}
 		if(CH6_SW == ch_on && G_Data[5][j] < YHLIMIT && G_Data[5][j] > YLLIMIT && G_Data[5][j+1] < YHLIMIT && G_Data[5][j+1] > YLLIMIT)
 		{
 			LCD_SetColors(LCD_COLOR_HLT,LCD_COLOR_BACK);
-			LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[5][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[5][j+1] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[5][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[5][j+1] - YLLIMIT)*enrate)));
 		}
 		if(CH7_SW == ch_on && G_Data[6][j] < YHLIMIT && G_Data[6][j] > YLLIMIT && G_Data[6][j+1] < YHLIMIT && G_Data[6][j+1] > YLLIMIT)
 		{
 			LCD_SetColors(LCD_COLOR_BT,LCD_COLOR_BACK);
-			LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[6][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[6][j+1] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[6][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[6][j+1] - YLLIMIT)*enrate)));
 		}
 		if(CH8_SW == ch_on && G_Data[7][j] < YHLIMIT && G_Data[7][j] > YLLIMIT && G_Data[7][j+1] < YHLIMIT && G_Data[7][j+1] > YLLIMIT)
 		{
 			LCD_SetColors(LCD_COLOR_BLUE,LCD_COLOR_BACK);
-			LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[7][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[7][j+1] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[7][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[7][j+1] - YLLIMIT)*enrate)));
 		}
 		if(CHNUM > 8)
 		{
 			if(CH9_SW == ch_on && G_Data[8][j] < YHLIMIT && G_Data[8][j] > YLLIMIT && G_Data[8][j+1] < YHLIMIT && G_Data[8][j+1] > YLLIMIT)
 			{
 				LCD_SetColors(LCD_COLOR_WHITE,LCD_COLOR_BACK);
-				LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[8][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[8][j+1] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[8][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[8][j+1] - YLLIMIT)*enrate)));
 			}
 			if(CH10_SW == ch_on && G_Data[1][9] < YHLIMIT && G_Data[1][9] > YLLIMIT && G_Data[9][j+1] < YHLIMIT && G_Data[9][j+1] > YLLIMIT)
 			{
 				LCD_SetColors(LCD_COLOR_GR1,LCD_COLOR_BACK);
-				LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[9][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[9][j+1] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[9][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[9][j+1] - YLLIMIT)*enrate)));
 			}
 			if(CH11_SW == ch_on && G_Data[10][j] < YHLIMIT && G_Data[10][j] > YLLIMIT && G_Data[10][j+1] < YHLIMIT && G_Data[10][j+1] > YLLIMIT)
 			{
 				LCD_SetColors(LCD_COLOR_GR2,LCD_COLOR_BACK);
-				LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[10][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[10][j+1] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[10][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[10][j+1] - YLLIMIT)*enrate)));
 			}
 			if(CH12_SW == ch_on && G_Data[11][j] < YHLIMIT && G_Data[11][j] > YLLIMIT && G_Data[11][j+1] < YHLIMIT && G_Data[11][j+1] > YLLIMIT)
 			{
 				LCD_SetColors(LCD_COLOR_GR3,LCD_COLOR_BACK);
-				LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[11][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[11][j+1] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[11][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[11][j+1] - YLLIMIT)*enrate)));
 			}
 			if(CH13_SW == ch_on && G_Data[12][j] < YHLIMIT && G_Data[12][j] > YLLIMIT && G_Data[12][j+1] < YHLIMIT && G_Data[12][j+1] > YLLIMIT)
 			{
 				LCD_SetColors(LCD_COLOR_GR4,LCD_COLOR_BACK);
-				LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[12][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[12][j+1] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[12][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[12][j+1] - YLLIMIT)*enrate)));
 			}
 			if(CH14_SW == ch_on && G_Data[13][j] < YHLIMIT && G_Data[13][j] > YLLIMIT && G_Data[13][j+1] < YHLIMIT && G_Data[13][j+1] > YLLIMIT)
 			{
 				LCD_SetColors(LCD_COLOR_GR5,LCD_COLOR_BACK);
-				LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[13][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[13][j+1] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[13][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[13][j+1] - YLLIMIT)*enrate)));
 			}
 			if(CH15_SW == ch_on && G_Data[14][j] < YHLIMIT && G_Data[14][j] > YLLIMIT && G_Data[14][j+1] < YHLIMIT && G_Data[14][j+1] > YLLIMIT)
 			{
 				LCD_SetColors(LCD_COLOR_GR6,LCD_COLOR_BACK);
-				LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[14][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[14][j+1] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[14][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[14][j+1] - YLLIMIT)*enrate)));
 			}
 			if(CH16_SW == ch_on && G_Data[15][j] < YHLIMIT && G_Data[15][j] > YLLIMIT && G_Data[15][j+1] < YHLIMIT && G_Data[15][j+1] > YLLIMIT)
 			{
 				LCD_SetColors(LCD_COLOR_GR7,LCD_COLOR_BACK);
-				LCD_DrawUniLine(111-80 + j,(int)(400-((G_Data[15][j] - YLLIMIT)*enrate)),112 - 80 + j,(400-((G_Data[15][j+1] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3 + j,(int)(400-((G_Data[15][j] - YLLIMIT)*enrate)),112 - 80+3 + j,(400-((G_Data[15][j+1] - YLLIMIT)*enrate)));
 			}
 		}
 	}
@@ -668,9 +668,9 @@ void Draw_graph(void)
 		LCD_SetColors(LCD_COLOR_RED,LCD_COLOR_BACK);
 		if(count == 0)			
 		{
-			LCD_DrawUniLine(111-80,(int)(400-((CH1TEMP - COR1 - YLLIMIT)*enrate)),112-80,(int)(400-((CH1TEMP - COR1 - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3,(int)(400-((CH1TEMP - COR1 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH1TEMP - COR1 - YLLIMIT)*enrate)));
 		}else{	
-			LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[0][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[0][count] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[0][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[0][count] - YLLIMIT)*enrate)));
 		}
 	}
 	if(CH2_SW == ch_on && page_flag == graph && G_Data[1][count] < YHLIMIT && G_Data[1][count] > YLLIMIT && G_Data[1][count-1]< YHLIMIT && G_Data[1][count-1]> YLLIMIT)
@@ -678,9 +678,9 @@ void Draw_graph(void)
 		LCD_SetColors(LCD_COLOR_GREEN,LCD_COLOR_BACK);
 		if(count == 0)			
 		{
-			LCD_DrawUniLine(111-80,(int)(400-((CH2TEMP - COR2 - YLLIMIT)*enrate)),112-80,(int)(400-((CH2TEMP - COR2 - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3,(int)(400-((CH2TEMP - COR2 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH2TEMP - COR2 - YLLIMIT)*enrate)));
 		}else{	
-			LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[1][count-1]- YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[1][count]- YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[1][count-1]- YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[1][count]- YLLIMIT)*enrate)));
 		}
 	}
 	if(CH3_SW == ch_on && page_flag == graph && G_Data[2][count] < YHLIMIT && G_Data[2][count] > YLLIMIT && G_Data[2][count-1]< YHLIMIT && G_Data[2][count-1]> YLLIMIT)
@@ -689,9 +689,9 @@ void Draw_graph(void)
 		if(count == 0)
 			
 		{
-			LCD_DrawUniLine(111-80,(int)(400-((CH3TEMP - COR3 - YLLIMIT)*enrate)),112-80,(int)(400-((CH3TEMP - COR3 - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3,(int)(400-((CH3TEMP - COR3 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH3TEMP - COR3 - YLLIMIT)*enrate)));
 		}else{	
-			LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[2][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[2][count] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[2][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[2][count] - YLLIMIT)*enrate)));
 		}		
 	}
 	if(CH4_SW == ch_on && page_flag == graph && G_Data[3][count] < YHLIMIT && G_Data[3][count]  > YLLIMIT && G_Data[3][count-1]< YHLIMIT && G_Data[3][count-1]> YLLIMIT)
@@ -700,9 +700,9 @@ void Draw_graph(void)
 		if(count == 0)
 			
 		{
-			LCD_DrawUniLine(111-80,(int)(400-((CH4TEMP - COR4  - YLLIMIT)*enrate)),112-80,(int)(400-((CH4TEMP - COR4  - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3,(int)(400-((CH4TEMP - COR4  - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH4TEMP - COR4  - YLLIMIT)*enrate)));
 		}else{	
-			LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[3][count-1]  - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[3][count]  - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[3][count-1]  - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[3][count]  - YLLIMIT)*enrate)));
 		}		
 	}
 	if(CH5_SW == ch_on && page_flag == graph && G_Data[4][count]  < YHLIMIT && G_Data[4][count] > YLLIMIT && G_Data[4][count-1]< YHLIMIT && G_Data[4][count-1]> YLLIMIT)
@@ -711,9 +711,9 @@ void Draw_graph(void)
 		if(count == 0)
 			
 		{
-			LCD_DrawUniLine(111-80,(int)(400-((CH5TEMP - COR5 - YLLIMIT)*enrate)),112-80,(int)(400-((CH5TEMP - COR5 - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3,(int)(400-((CH5TEMP - COR5 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH5TEMP - COR5 - YLLIMIT)*enrate)));
 		}else{	
-			LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[4][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[4][count] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[4][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[4][count] - YLLIMIT)*enrate)));
 		}		
 	}
 	if(CH6_SW == ch_on && page_flag == graph && G_Data[5][count] < YHLIMIT && G_Data[5][count] > YLLIMIT && G_Data[5][count-1]< YHLIMIT && G_Data[5][count-1]> YLLIMIT)
@@ -722,9 +722,9 @@ void Draw_graph(void)
 		if(count == 0)
 			
 		{
-			LCD_DrawUniLine(111-80,(int)(400-((CH6TEMP - COR6 - YLLIMIT)*enrate)),112-80,(int)(400-((CH6TEMP - COR6 - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3,(int)(400-((CH6TEMP - COR6 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH6TEMP - COR6 - YLLIMIT)*enrate)));
 		}else{	
-			LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[5][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[5][count] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[5][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[5][count] - YLLIMIT)*enrate)));
 		}		
 	}
 	if(CH7_SW == ch_on && page_flag == graph && G_Data[6][count] < YHLIMIT && G_Data[6][count] > YLLIMIT && G_Data[6][count-1]< YHLIMIT && G_Data[6][count-1]> YLLIMIT)
@@ -733,9 +733,9 @@ void Draw_graph(void)
 		if(count == 0)
 			
 		{
-			LCD_DrawUniLine(111-80,(int)(400-((CH7TEMP - COR7 - YLLIMIT)*enrate)),112-80,(int)(400-((CH7TEMP - COR7 - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3,(int)(400-((CH7TEMP - COR7 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH7TEMP - COR7 - YLLIMIT)*enrate)));
 		}else{	
-			LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[6][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[6][count] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[6][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[6][count] - YLLIMIT)*enrate)));
 		}		
 	}
 	if(CH8_SW == ch_on && page_flag == graph && G_Data[7][count] < YHLIMIT && G_Data[7][count] > YLLIMIT && G_Data[7][count-1]< YHLIMIT && G_Data[7][count-1]> YLLIMIT)
@@ -744,9 +744,9 @@ void Draw_graph(void)
 		if(count == 0)
 			
 		{
-			LCD_DrawUniLine(111-80,(int)(400-((CH8TEMP - COR8 - YLLIMIT)*enrate)),112-80,(int)(400-((CH8TEMP - COR8 - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3,(int)(400-((CH8TEMP - COR8 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH8TEMP - COR8 - YLLIMIT)*enrate)));
 		}else{	
-			LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[7][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[7][count] - YLLIMIT)*enrate)));
+			LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[7][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[7][count] - YLLIMIT)*enrate)));
 		}		
 	}
 	if(CHNUM > 8)
@@ -757,9 +757,9 @@ void Draw_graph(void)
 			if(count == 0)
 				
 			{
-				LCD_DrawUniLine(111-80,(int)(400-((CH9TEMP - COR9 - YLLIMIT)*enrate)),112-80,(int)(400-((CH9TEMP - COR9 - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3,(int)(400-((CH9TEMP - COR9 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH9TEMP - COR9 - YLLIMIT)*enrate)));
 			}else{	
-				LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[8][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[8][count] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[8][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[8][count] - YLLIMIT)*enrate)));
 			}		
 		}
 		if(CH10_SW == ch_on && page_flag == graph && G_Data[9][count] < YHLIMIT && G_Data[9][count] > YLLIMIT && G_Data[9][count-1]< YHLIMIT && G_Data[9][count-1]> YLLIMIT)
@@ -768,9 +768,9 @@ void Draw_graph(void)
 			if(count == 0)
 				
 			{
-				LCD_DrawUniLine(111-80,(int)(400-((CH10TEMP - COR10 - YLLIMIT)*enrate)),112-80,(int)(400-((CH10TEMP - COR10 - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3,(int)(400-((CH10TEMP - COR10 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH10TEMP - COR10 - YLLIMIT)*enrate)));
 			}else{	
-				LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[9][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[9][count] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[9][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[9][count] - YLLIMIT)*enrate)));
 			}		
 		}
 		if(CH11_SW == ch_on && page_flag == graph && G_Data[10][count] < YHLIMIT && G_Data[10][count] > YLLIMIT && G_Data[10][count-1]< YHLIMIT && G_Data[10][count-1]> YLLIMIT)
@@ -779,9 +779,9 @@ void Draw_graph(void)
 			if(count == 0)
 				
 			{
-				LCD_DrawUniLine(111-80,(int)(400-((CH11TEMP - COR11 - YLLIMIT)*enrate)),112-80,(int)(400-((CH11TEMP - COR11 - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3,(int)(400-((CH11TEMP - COR11 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH11TEMP - COR11 - YLLIMIT)*enrate)));
 			}else{	
-				LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[10][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[10][count] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[10][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[10][count] - YLLIMIT)*enrate)));
 			}		
 		}
 		if(CH12_SW == ch_on && page_flag == graph && G_Data[11][count] < YHLIMIT && G_Data[11][count] > YLLIMIT && G_Data[11][count-1]< YHLIMIT && G_Data[11][count-1]> YLLIMIT)
@@ -790,9 +790,9 @@ void Draw_graph(void)
 			if(count == 0)
 				
 			{
-				LCD_DrawUniLine(111-80,(int)(400-((CH12TEMP - COR12 - YLLIMIT)*enrate)),112-80,(int)(400-((CH12TEMP - COR12 - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3,(int)(400-((CH12TEMP - COR12 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH12TEMP - COR12 - YLLIMIT)*enrate)));
 			}else{	
-				LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[11][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[11][count] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[11][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[11][count] - YLLIMIT)*enrate)));
 			}		
 		}
 		if(CH13_SW == ch_on && page_flag == graph && G_Data[12][count] < YHLIMIT && G_Data[12][count] > YLLIMIT && G_Data[12][count-1]< YHLIMIT && G_Data[12][count-1]> YLLIMIT)
@@ -801,9 +801,9 @@ void Draw_graph(void)
 			if(count == 0)
 				
 			{
-				LCD_DrawUniLine(111-80,(int)(400-((CH13TEMP - COR13 - YLLIMIT)*enrate)),112-80,(int)(400-((CH13TEMP - COR13 - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3,(int)(400-((CH13TEMP - COR13 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH13TEMP - COR13 - YLLIMIT)*enrate)));
 			}else{	
-				LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[12][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[12][count] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[12][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[12][count] - YLLIMIT)*enrate)));
 			}		
 		}
 		if(CH14_SW == ch_on && page_flag == graph && G_Data[13][count] < YHLIMIT && G_Data[13][count] > YLLIMIT && G_Data[13][count-1]< YHLIMIT && G_Data[13][count-1]> YLLIMIT)
@@ -812,9 +812,9 @@ void Draw_graph(void)
 			if(count == 0)
 				
 			{
-				LCD_DrawUniLine(111-80,(int)(400-((CH14TEMP - COR14 - YLLIMIT)*enrate)),112-80,(int)(400-((CH14TEMP - COR14 - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3,(int)(400-((CH14TEMP - COR14 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH14TEMP - COR14 - YLLIMIT)*enrate)));
 			}else{	
-				LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[13][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[13][count] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[13][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[13][count] - YLLIMIT)*enrate)));
 			}		
 		}
 		if(CH15_SW == ch_on && page_flag == graph && G_Data[14][count] < YHLIMIT && G_Data[14][count] > YLLIMIT && G_Data[14][count-1]< YHLIMIT && G_Data[14][count-1]> YLLIMIT)
@@ -823,9 +823,9 @@ void Draw_graph(void)
 			if(count == 0)
 				
 			{
-				LCD_DrawUniLine(111-80,(int)(400-((CH15TEMP - COR15 - YLLIMIT)*enrate)),112-80,(int)(400-((CH15TEMP - COR15 - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3,(int)(400-((CH15TEMP - COR15 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH15TEMP - COR15 - YLLIMIT)*enrate)));
 			}else{	
-				LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[14][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[14][count] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[14][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[14][count] - YLLIMIT)*enrate)));
 			}		
 		}
 		if(CH16_SW == ch_on && page_flag == graph && G_Data[15][count] < YHLIMIT && G_Data[15][count] > YLLIMIT && G_Data[15][count-1]< YHLIMIT && G_Data[15][count-1]> YLLIMIT)
@@ -834,9 +834,9 @@ void Draw_graph(void)
 			if(count == 0)
 				
 			{
-				LCD_DrawUniLine(111-80,(int)(400-((CH16TEMP - COR16 - YLLIMIT)*enrate)),112-80,(int)(400-((CH16TEMP - COR16 - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3,(int)(400-((CH16TEMP - COR16 - YLLIMIT)*enrate)),112-80+3,(int)(400-((CH16TEMP - COR16 - YLLIMIT)*enrate)));
 			}else{	
-				LCD_DrawUniLine(111-80+count,(int)(400-((G_Data[15][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+count,(400-((G_Data[15][count] - YLLIMIT)*enrate)));
+				LCD_DrawUniLine(111-80+3+count,(int)(400-((G_Data[15][count-1] - YLLIMIT)*enrate))/*400-G_Data[count-1]*/,112-80+3+count,(400-((G_Data[15][count] - YLLIMIT)*enrate)));
 			}		
 		}
 	}

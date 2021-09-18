@@ -113,13 +113,15 @@ void page_sysinfo(void)
 		LCD_DisplayStringLine(130,220,"T,K,J,N,E,S,R,B");
 		sprintf(buf,"%03d",CHNUM);
 		LCD_DisplayStringLine(170,220,(uint8_t *)buf);
-		LCD_DisplayStringLine(210,220,"REV 1.7");
+		LCD_DisplayStringLine(210,220,"REV 1.8");
 		LCD_DisplayStringLine(250,220,"");
 		LCD_DisplayStringLine(290,220,"REV A0");
 		LCD_DisplayStringLine(330,220,(uint8_t *)SN);
 	}
 	//1.4修改触摸校准不保存的问题
 	//1.6修改最大最小值判断算法
+	//1.7优化讯通
+	//1.8优化曲线负温度显示问题
 	if(LANG == chs)
 	{
 		DrawInstruction("系统信息页");
