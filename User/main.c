@@ -3260,7 +3260,7 @@ void UsbDataHandle(void)
 							watch = (((u16)RecBuff[5+usbbuf[3]+i*2] << 8) + RecBuff[6+usbbuf[3]+i*2] - (int)(Correction[usbbuf[3] + i] * 10));
 							if((((u16)RecBuff[5+usbbuf[3]+i*2] << 8) + RecBuff[6+usbbuf[3]+i*2] - (int)(Correction[usbbuf[3] + i] * 10)) == 0x7FFF)
 							{
-								usbsendbuf[6+i*2] = 0xFF;
+								usbsendbuf[6+i*2] = 0x7F;
 								usbsendbuf[7+i*2] = 0xFF;
 							}else{
 								usbsendbuf[6+i*2] = (u8)((((u16)RecBuff[5+usbbuf[3]+i*2] << 8) + RecBuff[6+usbbuf[3]+i*2] - (int)(Correction[usbbuf[3] + i] * 10)) >> 8);
