@@ -3258,7 +3258,7 @@ void UsbDataHandle(void)
 						for(i = 0; i < usbsendbuf[5]; i++)
 						{
 							watch = (((u16)RecBuff[5+usbbuf[3]+i*2] << 8) + RecBuff[6+usbbuf[3]+i*2] - (int)(Correction[usbbuf[3] + i] * 10));
-							if((((u16)RecBuff[5+usbbuf[3]+i*2] << 8) + RecBuff[6+usbbuf[3]+i*2] - (int)(Correction[usbbuf[3] + i] * 10)) == 0x4E1F)
+							if((((u16)RecBuff[5+usbbuf[3]+i*2] << 8) + RecBuff[6+usbbuf[3]+i*2] - (int)(Correction[usbbuf[3] + i] * 10)) == 0x7FFF)
 							{
 								usbsendbuf[6+i*2] = 0xFF;
 								usbsendbuf[7+i*2] = 0xFF;

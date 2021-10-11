@@ -16748,7 +16748,7 @@ void Utest(void)
 	for(i=0;i<CHNUM;i++)
 	{
 
-		if(ch_temp[i] > 1999)
+		if(ch_temp[i] > 3276)
 		{
 			strcpy(buf,"\tN/A");
 		}else{

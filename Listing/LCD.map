@@ -5154,66 +5154,66 @@ Image Symbol Table
     i.page_set                               0x0802c258   Section        0  settings.o(i.page_set)
     i.page_sys                               0x0802c74c   Section        0  system.o(i.page_sys)
     i.page_sysinfo                           0x0802cb00   Section        0  sysinfo.o(i.page_sysinfo)
-    i.plus_day                               0x0802ce74   Section        0  bsp_key.o(i.plus_day)
-    i.plus_hour                              0x0802ceb4   Section        0  bsp_key.o(i.plus_hour)
-    i.plus_min                               0x0802cef8   Section        0  bsp_key.o(i.plus_min)
-    i.plus_mon                               0x0802cf3c   Section        0  bsp_key.o(i.plus_mon)
-    i.plus_sec                               0x0802cf7c   Section        0  bsp_key.o(i.plus_sec)
-    i.plus_year                              0x0802cfc0   Section        0  bsp_key.o(i.plus_year)
-    i.power_on                               0x0802d000   Section        0  power_on.o(i.power_on)
-    i.put_fat                                0x0802d0a0   Section        0  ff.o(i.put_fat)
-    i.remove_chain                           0x0802d1c0   Section        0  ff.o(i.remove_chain)
-    remove_chain                             0x0802d1c1   Thumb Code    98  ff.o(i.remove_chain)
-    i.st_clust                               0x0802d222   Section        0  ff.o(i.st_clust)
-    st_clust                                 0x0802d223   Thumb Code    16  ff.o(i.st_clust)
-    i.stimefocus_off                         0x0802d234   Section        0  bsp_key.o(i.stimefocus_off)
-    i.stimefocus_on                          0x0802d2cc   Section        0  bsp_key.o(i.stimefocus_on)
-    i.sum_sfn                                0x0802d3a0   Section        0  ff.o(i.sum_sfn)
-    sum_sfn                                  0x0802d3a1   Thumb Code    26  ff.o(i.sum_sfn)
-    i.sync_window                            0x0802d3ba   Section        0  ff.o(i.sync_window)
-    sync_window                              0x0802d3bb   Thumb Code    82  ff.o(i.sync_window)
-    i.touch_set                              0x0802d40c   Section        0  bsp_key.o(i.touch_set)
-    i.udisk_scan                             0x0802d4c4   Section        0  main.o(i.udisk_scan)
-    i.validate                               0x0802d510   Section        0  ff.o(i.validate)
-    validate                                 0x0802d511   Thumb Code    34  ff.o(i.validate)
-    i.xEndCH376Cmd                           0x0802d534   Section        0  ch376.o(i.xEndCH376Cmd)
-    i.xReadCH376Data                         0x0802d540   Section        0  ch376.o(i.xReadCH376Data)
-    i.xWriteCH376Cmd                         0x0802d554   Section        0  ch376.o(i.xWriteCH376Cmd)
-    i.xWriteCH376Data                        0x0802d59c   Section        0  ch376.o(i.xWriteCH376Data)
-    i.yhfocus_off                            0x0802d5ac   Section        0  bsp_key.o(i.yhfocus_off)
-    i.yhfocus_on                             0x0802d6b4   Section        0  bsp_key.o(i.yhfocus_on)
-    i.ylfocus_off                            0x0802d7f4   Section        0  bsp_key.o(i.ylfocus_off)
-    i.ylfocus_on                             0x0802d8fc   Section        0  bsp_key.o(i.ylfocus_on)
-    .constdata                               0x0802da38   Section       68  home.o(.constdata)
-    .constdata                               0x0802da7c   Section       58  ff.o(.constdata)
-    LfnOfs                                   0x0802da7c   Data          13  ff.o(.constdata)
-    vst                                      0x0802da8a   Data          22  ff.o(.constdata)
-    cst                                      0x0802daa0   Data          22  ff.o(.constdata)
-    .constdata                               0x0802dab6   Section    176320  cc936.o(.constdata)
-    uni2oem                                  0x0802dab6   Data       87172  cc936.o(.constdata)
-    oem2uni                                  0x08042f3a   Data       87172  cc936.o(.constdata)
-    lower                                    0x080583be   Data         988  cc936.o(.constdata)
-    upper                                    0x0805879a   Data         988  cc936.o(.constdata)
-    .constdata                               0x08058b76   Section       72  bsp_key.o(.constdata)
-    .constdata                               0x08058bbe   Section     4560  fonts.o(.constdata)
-    .constdata                               0x08059d8e   Section    12728  fonts.o(.constdata)
-    .constdata                               0x0805cf46   Section     2822  fonts.o(.constdata)
-    .constdata                               0x0805da4c   Section     7493  fonts.o(.constdata)
-    .constdata                               0x0805f791   Section      342  fonts.o(.constdata)
-    .constdata                               0x0805f8e8   Section    11780  fonts.o(.constdata)
-    .constdata                               0x080626ec   Section     7220  fonts.o(.constdata)
-    .constdata                               0x08064320   Section     3800  fonts.o(.constdata)
-    .constdata                               0x080651f8   Section     2660  fonts.o(.constdata)
-    .constdata                               0x08065c5c   Section     3800  fonts.o(.constdata)
-    .constdata                               0x08066b34   Section     9120  fonts.o(.constdata)
-    .constdata                               0x08068ed4   Section    22560  fonts.o(.constdata)
-    .constdata                               0x0806e6f4   Section    10640  fonts.o(.constdata)
-    .constdata                               0x08071084   Section     6080  fonts.o(.constdata)
-    .constdata                               0x08072844   Section      238  fonts.o(.constdata)
-    .constdata                               0x08072932   Section      129  ctype_o.o(.constdata)
-    .constdata                               0x080729b4   Section        4  ctype_o.o(.constdata)
-    table                                    0x080729b4   Data           4  ctype_o.o(.constdata)
-    .conststring                             0x080729b8   Section      114  bsp_key.o(.conststring)
+    i.plus_day                               0x0802ce6c   Section        0  bsp_key.o(i.plus_day)
+    i.plus_hour                              0x0802ceac   Section        0  bsp_key.o(i.plus_hour)
+    i.plus_min                               0x0802cef0   Section        0  bsp_key.o(i.plus_min)
+    i.plus_mon                               0x0802cf34   Section        0  bsp_key.o(i.plus_mon)
+    i.plus_sec                               0x0802cf74   Section        0  bsp_key.o(i.plus_sec)
+    i.plus_year                              0x0802cfb8   Section        0  bsp_key.o(i.plus_year)
+    i.power_on                               0x0802cff8   Section        0  power_on.o(i.power_on)
+    i.put_fat                                0x0802d098   Section        0  ff.o(i.put_fat)
+    i.remove_chain                           0x0802d1b8   Section        0  ff.o(i.remove_chain)
+    remove_chain                             0x0802d1b9   Thumb Code    98  ff.o(i.remove_chain)
+    i.st_clust                               0x0802d21a   Section        0  ff.o(i.st_clust)
+    st_clust                                 0x0802d21b   Thumb Code    16  ff.o(i.st_clust)
+    i.stimefocus_off                         0x0802d22c   Section        0  bsp_key.o(i.stimefocus_off)
+    i.stimefocus_on                          0x0802d2c4   Section        0  bsp_key.o(i.stimefocus_on)
+    i.sum_sfn                                0x0802d398   Section        0  ff.o(i.sum_sfn)
+    sum_sfn                                  0x0802d399   Thumb Code    26  ff.o(i.sum_sfn)
+    i.sync_window                            0x0802d3b2   Section        0  ff.o(i.sync_window)
+    sync_window                              0x0802d3b3   Thumb Code    82  ff.o(i.sync_window)
+    i.touch_set                              0x0802d404   Section        0  bsp_key.o(i.touch_set)
+    i.udisk_scan                             0x0802d4bc   Section        0  main.o(i.udisk_scan)
+    i.validate                               0x0802d508   Section        0  ff.o(i.validate)
+    validate                                 0x0802d509   Thumb Code    34  ff.o(i.validate)
+    i.xEndCH376Cmd                           0x0802d52c   Section        0  ch376.o(i.xEndCH376Cmd)
+    i.xReadCH376Data                         0x0802d538   Section        0  ch376.o(i.xReadCH376Data)
+    i.xWriteCH376Cmd                         0x0802d54c   Section        0  ch376.o(i.xWriteCH376Cmd)
+    i.xWriteCH376Data                        0x0802d594   Section        0  ch376.o(i.xWriteCH376Data)
+    i.yhfocus_off                            0x0802d5a4   Section        0  bsp_key.o(i.yhfocus_off)
+    i.yhfocus_on                             0x0802d6ac   Section        0  bsp_key.o(i.yhfocus_on)
+    i.ylfocus_off                            0x0802d7ec   Section        0  bsp_key.o(i.ylfocus_off)
+    i.ylfocus_on                             0x0802d8f4   Section        0  bsp_key.o(i.ylfocus_on)
+    .constdata                               0x0802da30   Section       68  home.o(.constdata)
+    .constdata                               0x0802da74   Section       58  ff.o(.constdata)
+    LfnOfs                                   0x0802da74   Data          13  ff.o(.constdata)
+    vst                                      0x0802da82   Data          22  ff.o(.constdata)
+    cst                                      0x0802da98   Data          22  ff.o(.constdata)
+    .constdata                               0x0802daae   Section    176320  cc936.o(.constdata)
+    uni2oem                                  0x0802daae   Data       87172  cc936.o(.constdata)
+    oem2uni                                  0x08042f32   Data       87172  cc936.o(.constdata)
+    lower                                    0x080583b6   Data         988  cc936.o(.constdata)
+    upper                                    0x08058792   Data         988  cc936.o(.constdata)
+    .constdata                               0x08058b6e   Section       72  bsp_key.o(.constdata)
+    .constdata                               0x08058bb6   Section     4560  fonts.o(.constdata)
+    .constdata                               0x08059d86   Section    12728  fonts.o(.constdata)
+    .constdata                               0x0805cf3e   Section     2822  fonts.o(.constdata)
+    .constdata                               0x0805da44   Section     7493  fonts.o(.constdata)
+    .constdata                               0x0805f789   Section      342  fonts.o(.constdata)
+    .constdata                               0x0805f8e0   Section    11780  fonts.o(.constdata)
+    .constdata                               0x080626e4   Section     7220  fonts.o(.constdata)
+    .constdata                               0x08064318   Section     3800  fonts.o(.constdata)
+    .constdata                               0x080651f0   Section     2660  fonts.o(.constdata)
+    .constdata                               0x08065c54   Section     3800  fonts.o(.constdata)
+    .constdata                               0x08066b2c   Section     9120  fonts.o(.constdata)
+    .constdata                               0x08068ecc   Section    22560  fonts.o(.constdata)
+    .constdata                               0x0806e6ec   Section    10640  fonts.o(.constdata)
+    .constdata                               0x0807107c   Section     6080  fonts.o(.constdata)
+    .constdata                               0x0807283c   Section      238  fonts.o(.constdata)
+    .constdata                               0x0807292a   Section      129  ctype_o.o(.constdata)
+    .constdata                               0x080729ac   Section        4  ctype_o.o(.constdata)
+    table                                    0x080729ac   Data           4  ctype_o.o(.constdata)
+    .conststring                             0x080729b0   Section      114  bsp_key.o(.conststring)
     .data                                    0x20000000   Section       20  system_stm32f4xx.o(.data)
     .data                                    0x20000014   Section       16  stm32f4xx_rcc.o(.data)
     APBAHBPrescTable                         0x20000014   Data          16  stm32f4xx_rcc.o(.data)
@@ -6031,46 +6031,46 @@ Image Symbol Table
     page_set                                 0x0802c259   Thumb Code   850  settings.o(i.page_set)
     page_sys                                 0x0802c74d   Thumb Code   694  system.o(i.page_sys)
     page_sysinfo                             0x0802cb01   Thumb Code   532  sysinfo.o(i.page_sysinfo)
-    plus_day                                 0x0802ce75   Thumb Code    56  bsp_key.o(i.plus_day)
-    plus_hour                                0x0802ceb5   Thumb Code    58  bsp_key.o(i.plus_hour)
-    plus_min                                 0x0802cef9   Thumb Code    58  bsp_key.o(i.plus_min)
-    plus_mon                                 0x0802cf3d   Thumb Code    56  bsp_key.o(i.plus_mon)
-    plus_sec                                 0x0802cf7d   Thumb Code    58  bsp_key.o(i.plus_sec)
-    plus_year                                0x0802cfc1   Thumb Code    56  bsp_key.o(i.plus_year)
-    power_on                                 0x0802d001   Thumb Code    98  power_on.o(i.power_on)
-    put_fat                                  0x0802d0a1   Thumb Code   288  ff.o(i.put_fat)
-    stimefocus_off                           0x0802d235   Thumb Code   144  bsp_key.o(i.stimefocus_off)
-    stimefocus_on                            0x0802d2cd   Thumb Code   168  bsp_key.o(i.stimefocus_on)
-    touch_set                                0x0802d40d   Thumb Code   148  bsp_key.o(i.touch_set)
-    udisk_scan                               0x0802d4c5   Thumb Code    66  main.o(i.udisk_scan)
-    xEndCH376Cmd                             0x0802d535   Thumb Code     8  ch376.o(i.xEndCH376Cmd)
-    xReadCH376Data                           0x0802d541   Thumb Code    18  ch376.o(i.xReadCH376Data)
-    xWriteCH376Cmd                           0x0802d555   Thumb Code    68  ch376.o(i.xWriteCH376Cmd)
-    xWriteCH376Data                          0x0802d59d   Thumb Code    16  ch376.o(i.xWriteCH376Data)
-    yhfocus_off                              0x0802d5ad   Thumb Code   252  bsp_key.o(i.yhfocus_off)
-    yhfocus_on                               0x0802d6b5   Thumb Code   280  bsp_key.o(i.yhfocus_on)
-    ylfocus_off                              0x0802d7f5   Thumb Code   252  bsp_key.o(i.ylfocus_off)
-    ylfocus_on                               0x0802d8fd   Thumb Code   280  bsp_key.o(i.ylfocus_on)
-    TC_Type                                  0x0802da38   Data          68  home.o(.constdata)
-    TC_Menu                                  0x08058b76   Data          72  bsp_key.o(.constdata)
-    ASCII16x24_Table                         0x08058bbe   Data        4560  fonts.o(.constdata)
-    Chinese24x24_Table                       0x08059d8e   Data       12728  fonts.o(.constdata)
-    Chinese24x27_Table                       0x0805cf46   Data        2822  fonts.o(.constdata)
-    Chinese24x19_Table                       0x0805da4c   Data        7493  fonts.o(.constdata)
-    Chinese16x20_Table                       0x0805f791   Data         342  fonts.o(.constdata)
-    ASCII16x31_Table                         0x0805f8e8   Data       11780  fonts.o(.constdata)
-    INS_Table                                0x080626ec   Data        7220  fonts.o(.constdata)
-    Channel_8x20B_Table                      0x08064320   Data        3800  fonts.o(.constdata)
-    Channel_8x14_Table                       0x080651f8   Data        2660  fonts.o(.constdata)
-    Channel_8x20_Table                       0x08065c5c   Data        3800  fonts.o(.constdata)
-    Channel_16x24_Table                      0x08066b34   Data        9120  fonts.o(.constdata)
-    Temp_24x40_Table                         0x08068ed4   Data       22560  fonts.o(.constdata)
-    Temp_16x28_Table                         0x0806e6f4   Data       10640  fonts.o(.constdata)
-    SYS_16x16_Table                          0x08071084   Data        6080  fonts.o(.constdata)
-    SONG_16x16_Table                         0x08072844   Data         238  fonts.o(.constdata)
-    __ctype_table                            0x08072932   Data         129  ctype_o.o(.constdata)
-    Region$$Table$$Base                      0x08072a2c   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08072a4c   Number         0  anon$$obj.o(Region$$Table)
+    plus_day                                 0x0802ce6d   Thumb Code    56  bsp_key.o(i.plus_day)
+    plus_hour                                0x0802cead   Thumb Code    58  bsp_key.o(i.plus_hour)
+    plus_min                                 0x0802cef1   Thumb Code    58  bsp_key.o(i.plus_min)
+    plus_mon                                 0x0802cf35   Thumb Code    56  bsp_key.o(i.plus_mon)
+    plus_sec                                 0x0802cf75   Thumb Code    58  bsp_key.o(i.plus_sec)
+    plus_year                                0x0802cfb9   Thumb Code    56  bsp_key.o(i.plus_year)
+    power_on                                 0x0802cff9   Thumb Code    98  power_on.o(i.power_on)
+    put_fat                                  0x0802d099   Thumb Code   288  ff.o(i.put_fat)
+    stimefocus_off                           0x0802d22d   Thumb Code   144  bsp_key.o(i.stimefocus_off)
+    stimefocus_on                            0x0802d2c5   Thumb Code   168  bsp_key.o(i.stimefocus_on)
+    touch_set                                0x0802d405   Thumb Code   148  bsp_key.o(i.touch_set)
+    udisk_scan                               0x0802d4bd   Thumb Code    66  main.o(i.udisk_scan)
+    xEndCH376Cmd                             0x0802d52d   Thumb Code     8  ch376.o(i.xEndCH376Cmd)
+    xReadCH376Data                           0x0802d539   Thumb Code    18  ch376.o(i.xReadCH376Data)
+    xWriteCH376Cmd                           0x0802d54d   Thumb Code    68  ch376.o(i.xWriteCH376Cmd)
+    xWriteCH376Data                          0x0802d595   Thumb Code    16  ch376.o(i.xWriteCH376Data)
+    yhfocus_off                              0x0802d5a5   Thumb Code   252  bsp_key.o(i.yhfocus_off)
+    yhfocus_on                               0x0802d6ad   Thumb Code   280  bsp_key.o(i.yhfocus_on)
+    ylfocus_off                              0x0802d7ed   Thumb Code   252  bsp_key.o(i.ylfocus_off)
+    ylfocus_on                               0x0802d8f5   Thumb Code   280  bsp_key.o(i.ylfocus_on)
+    TC_Type                                  0x0802da30   Data          68  home.o(.constdata)
+    TC_Menu                                  0x08058b6e   Data          72  bsp_key.o(.constdata)
+    ASCII16x24_Table                         0x08058bb6   Data        4560  fonts.o(.constdata)
+    Chinese24x24_Table                       0x08059d86   Data       12728  fonts.o(.constdata)
+    Chinese24x27_Table                       0x0805cf3e   Data        2822  fonts.o(.constdata)
+    Chinese24x19_Table                       0x0805da44   Data        7493  fonts.o(.constdata)
+    Chinese16x20_Table                       0x0805f789   Data         342  fonts.o(.constdata)
+    ASCII16x31_Table                         0x0805f8e0   Data       11780  fonts.o(.constdata)
+    INS_Table                                0x080626e4   Data        7220  fonts.o(.constdata)
+    Channel_8x20B_Table                      0x08064318   Data        3800  fonts.o(.constdata)
+    Channel_8x14_Table                       0x080651f0   Data        2660  fonts.o(.constdata)
+    Channel_8x20_Table                       0x08065c54   Data        3800  fonts.o(.constdata)
+    Channel_16x24_Table                      0x08066b2c   Data        9120  fonts.o(.constdata)
+    Temp_24x40_Table                         0x08068ecc   Data       22560  fonts.o(.constdata)
+    Temp_16x28_Table                         0x0806e6ec   Data       10640  fonts.o(.constdata)
+    SYS_16x16_Table                          0x0807107c   Data        6080  fonts.o(.constdata)
+    SONG_16x16_Table                         0x0807283c   Data         238  fonts.o(.constdata)
+    __ctype_table                            0x0807292a   Data         129  ctype_o.o(.constdata)
+    Region$$Table$$Base                      0x08072a24   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08072a44   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32f4xx.o(.data)
     AHBPrescTable                            0x20000004   Data          16  system_stm32f4xx.o(.data)
     range                                    0x20000024   Data           4  graph.o(.data)
@@ -6227,9 +6227,9 @@ Memory Map of the image
 
   Image Entry point : 0x080001ad
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00072d98, Max: 0x00100000, ABSOLUTE, COMPRESSED[0x00072bc0])
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00072d90, Max: 0x00100000, ABSOLUTE, COMPRESSED[0x00072bb8])
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00072a4c, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00072a44, Max: 0x00100000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -6870,64 +6870,64 @@ Memory Map of the image
     0x0802bdf8   0x0802bdf8   0x00000460   Code   RO         5284    i.page_sep          separation.o
     0x0802c258   0x0802c258   0x000004f4   Code   RO         5259    i.page_set          settings.o
     0x0802c74c   0x0802c74c   0x000003b4   Code   RO         5234    i.page_sys          system.o
-    0x0802cb00   0x0802cb00   0x00000374   Code   RO         5316    i.page_sysinfo      sysinfo.o
-    0x0802ce74   0x0802ce74   0x00000040   Code   RO         8437    i.plus_day          bsp_key.o
-    0x0802ceb4   0x0802ceb4   0x00000044   Code   RO         8438    i.plus_hour         bsp_key.o
-    0x0802cef8   0x0802cef8   0x00000044   Code   RO         8439    i.plus_min          bsp_key.o
-    0x0802cf3c   0x0802cf3c   0x00000040   Code   RO         8440    i.plus_mon          bsp_key.o
-    0x0802cf7c   0x0802cf7c   0x00000044   Code   RO         8441    i.plus_sec          bsp_key.o
-    0x0802cfc0   0x0802cfc0   0x00000040   Code   RO         8442    i.plus_year         bsp_key.o
-    0x0802d000   0x0802d000   0x000000a0   Code   RO         5521    i.power_on          power_on.o
-    0x0802d0a0   0x0802d0a0   0x00000120   Code   RO         6630    i.put_fat           ff.o
-    0x0802d1c0   0x0802d1c0   0x00000062   Code   RO         6631    i.remove_chain      ff.o
-    0x0802d222   0x0802d222   0x00000010   Code   RO         6632    i.st_clust          ff.o
-    0x0802d232   0x0802d232   0x00000002   PAD
-    0x0802d234   0x0802d234   0x00000098   Code   RO         8443    i.stimefocus_off    bsp_key.o
-    0x0802d2cc   0x0802d2cc   0x000000d4   Code   RO         8444    i.stimefocus_on     bsp_key.o
-    0x0802d3a0   0x0802d3a0   0x0000001a   Code   RO         6633    i.sum_sfn           ff.o
-    0x0802d3ba   0x0802d3ba   0x00000052   Code   RO         6635    i.sync_window       ff.o
-    0x0802d40c   0x0802d40c   0x000000b8   Code   RO         8445    i.touch_set         bsp_key.o
-    0x0802d4c4   0x0802d4c4   0x0000004c   Code   RO         6919    i.udisk_scan        main.o
-    0x0802d510   0x0802d510   0x00000022   Code   RO         6636    i.validate          ff.o
-    0x0802d532   0x0802d532   0x00000002   PAD
-    0x0802d534   0x0802d534   0x0000000c   Code   RO         9109    i.xEndCH376Cmd      ch376.o
-    0x0802d540   0x0802d540   0x00000012   Code   RO         9110    i.xReadCH376Data    ch376.o
-    0x0802d552   0x0802d552   0x00000002   PAD
-    0x0802d554   0x0802d554   0x00000048   Code   RO         9111    i.xWriteCH376Cmd    ch376.o
-    0x0802d59c   0x0802d59c   0x00000010   Code   RO         9112    i.xWriteCH376Data   ch376.o
-    0x0802d5ac   0x0802d5ac   0x00000108   Code   RO         8446    i.yhfocus_off       bsp_key.o
-    0x0802d6b4   0x0802d6b4   0x00000140   Code   RO         8447    i.yhfocus_on        bsp_key.o
-    0x0802d7f4   0x0802d7f4   0x00000108   Code   RO         8448    i.ylfocus_off       bsp_key.o
-    0x0802d8fc   0x0802d8fc   0x0000013c   Code   RO         8449    i.ylfocus_on        bsp_key.o
-    0x0802da38   0x0802da38   0x00000044   Data   RO         5149    .constdata          home.o
-    0x0802da7c   0x0802da7c   0x0000003a   Data   RO         6637    .constdata          ff.o
-    0x0802dab6   0x0802dab6   0x0002b0c0   Data   RO         6868    .constdata          cc936.o
-    0x08058b76   0x08058b76   0x00000048   Data   RO         8452    .constdata          bsp_key.o
-    0x08058bbe   0x08058bbe   0x000011d0   Data   RO         9664    .constdata          fonts.o
-    0x08059d8e   0x08059d8e   0x000031b8   Data   RO         9668    .constdata          fonts.o
-    0x0805cf46   0x0805cf46   0x00000b06   Data   RO         9669    .constdata          fonts.o
-    0x0805da4c   0x0805da4c   0x00001d45   Data   RO         9671    .constdata          fonts.o
-    0x0805f791   0x0805f791   0x00000156   Data   RO         9672    .constdata          fonts.o
-    0x0805f8e7   0x0805f8e7   0x00000001   PAD
-    0x0805f8e8   0x0805f8e8   0x00002e04   Data   RO         9673    .constdata          fonts.o
-    0x080626ec   0x080626ec   0x00001c34   Data   RO         9674    .constdata          fonts.o
-    0x08064320   0x08064320   0x00000ed8   Data   RO         9675    .constdata          fonts.o
-    0x080651f8   0x080651f8   0x00000a64   Data   RO         9676    .constdata          fonts.o
-    0x08065c5c   0x08065c5c   0x00000ed8   Data   RO         9677    .constdata          fonts.o
-    0x08066b34   0x08066b34   0x000023a0   Data   RO         9679    .constdata          fonts.o
-    0x08068ed4   0x08068ed4   0x00005820   Data   RO         9681    .constdata          fonts.o
-    0x0806e6f4   0x0806e6f4   0x00002990   Data   RO         9682    .constdata          fonts.o
-    0x08071084   0x08071084   0x000017c0   Data   RO         9684    .constdata          fonts.o
-    0x08072844   0x08072844   0x000000ee   Data   RO         9685    .constdata          fonts.o
-    0x08072932   0x08072932   0x00000081   Data   RO        10133    .constdata          mc_w.l(ctype_o.o)
-    0x080729b3   0x080729b3   0x00000001   PAD
-    0x080729b4   0x080729b4   0x00000004   Data   RO        10134    .constdata          mc_w.l(ctype_o.o)
-    0x080729b8   0x080729b8   0x00000072   Data   RO         8453    .conststring        bsp_key.o
-    0x08072a2a   0x08072a2a   0x00000002   PAD
-    0x08072a2c   0x08072a2c   0x00000020   Data   RO        10175    Region$$Table       anon$$obj.o
+    0x0802cb00   0x0802cb00   0x0000036c   Code   RO         5316    i.page_sysinfo      sysinfo.o
+    0x0802ce6c   0x0802ce6c   0x00000040   Code   RO         8437    i.plus_day          bsp_key.o
+    0x0802ceac   0x0802ceac   0x00000044   Code   RO         8438    i.plus_hour         bsp_key.o
+    0x0802cef0   0x0802cef0   0x00000044   Code   RO         8439    i.plus_min          bsp_key.o
+    0x0802cf34   0x0802cf34   0x00000040   Code   RO         8440    i.plus_mon          bsp_key.o
+    0x0802cf74   0x0802cf74   0x00000044   Code   RO         8441    i.plus_sec          bsp_key.o
+    0x0802cfb8   0x0802cfb8   0x00000040   Code   RO         8442    i.plus_year         bsp_key.o
+    0x0802cff8   0x0802cff8   0x000000a0   Code   RO         5521    i.power_on          power_on.o
+    0x0802d098   0x0802d098   0x00000120   Code   RO         6630    i.put_fat           ff.o
+    0x0802d1b8   0x0802d1b8   0x00000062   Code   RO         6631    i.remove_chain      ff.o
+    0x0802d21a   0x0802d21a   0x00000010   Code   RO         6632    i.st_clust          ff.o
+    0x0802d22a   0x0802d22a   0x00000002   PAD
+    0x0802d22c   0x0802d22c   0x00000098   Code   RO         8443    i.stimefocus_off    bsp_key.o
+    0x0802d2c4   0x0802d2c4   0x000000d4   Code   RO         8444    i.stimefocus_on     bsp_key.o
+    0x0802d398   0x0802d398   0x0000001a   Code   RO         6633    i.sum_sfn           ff.o
+    0x0802d3b2   0x0802d3b2   0x00000052   Code   RO         6635    i.sync_window       ff.o
+    0x0802d404   0x0802d404   0x000000b8   Code   RO         8445    i.touch_set         bsp_key.o
+    0x0802d4bc   0x0802d4bc   0x0000004c   Code   RO         6919    i.udisk_scan        main.o
+    0x0802d508   0x0802d508   0x00000022   Code   RO         6636    i.validate          ff.o
+    0x0802d52a   0x0802d52a   0x00000002   PAD
+    0x0802d52c   0x0802d52c   0x0000000c   Code   RO         9109    i.xEndCH376Cmd      ch376.o
+    0x0802d538   0x0802d538   0x00000012   Code   RO         9110    i.xReadCH376Data    ch376.o
+    0x0802d54a   0x0802d54a   0x00000002   PAD
+    0x0802d54c   0x0802d54c   0x00000048   Code   RO         9111    i.xWriteCH376Cmd    ch376.o
+    0x0802d594   0x0802d594   0x00000010   Code   RO         9112    i.xWriteCH376Data   ch376.o
+    0x0802d5a4   0x0802d5a4   0x00000108   Code   RO         8446    i.yhfocus_off       bsp_key.o
+    0x0802d6ac   0x0802d6ac   0x00000140   Code   RO         8447    i.yhfocus_on        bsp_key.o
+    0x0802d7ec   0x0802d7ec   0x00000108   Code   RO         8448    i.ylfocus_off       bsp_key.o
+    0x0802d8f4   0x0802d8f4   0x0000013c   Code   RO         8449    i.ylfocus_on        bsp_key.o
+    0x0802da30   0x0802da30   0x00000044   Data   RO         5149    .constdata          home.o
+    0x0802da74   0x0802da74   0x0000003a   Data   RO         6637    .constdata          ff.o
+    0x0802daae   0x0802daae   0x0002b0c0   Data   RO         6868    .constdata          cc936.o
+    0x08058b6e   0x08058b6e   0x00000048   Data   RO         8452    .constdata          bsp_key.o
+    0x08058bb6   0x08058bb6   0x000011d0   Data   RO         9664    .constdata          fonts.o
+    0x08059d86   0x08059d86   0x000031b8   Data   RO         9668    .constdata          fonts.o
+    0x0805cf3e   0x0805cf3e   0x00000b06   Data   RO         9669    .constdata          fonts.o
+    0x0805da44   0x0805da44   0x00001d45   Data   RO         9671    .constdata          fonts.o
+    0x0805f789   0x0805f789   0x00000156   Data   RO         9672    .constdata          fonts.o
+    0x0805f8df   0x0805f8df   0x00000001   PAD
+    0x0805f8e0   0x0805f8e0   0x00002e04   Data   RO         9673    .constdata          fonts.o
+    0x080626e4   0x080626e4   0x00001c34   Data   RO         9674    .constdata          fonts.o
+    0x08064318   0x08064318   0x00000ed8   Data   RO         9675    .constdata          fonts.o
+    0x080651f0   0x080651f0   0x00000a64   Data   RO         9676    .constdata          fonts.o
+    0x08065c54   0x08065c54   0x00000ed8   Data   RO         9677    .constdata          fonts.o
+    0x08066b2c   0x08066b2c   0x000023a0   Data   RO         9679    .constdata          fonts.o
+    0x08068ecc   0x08068ecc   0x00005820   Data   RO         9681    .constdata          fonts.o
+    0x0806e6ec   0x0806e6ec   0x00002990   Data   RO         9682    .constdata          fonts.o
+    0x0807107c   0x0807107c   0x000017c0   Data   RO         9684    .constdata          fonts.o
+    0x0807283c   0x0807283c   0x000000ee   Data   RO         9685    .constdata          fonts.o
+    0x0807292a   0x0807292a   0x00000081   Data   RO        10133    .constdata          mc_w.l(ctype_o.o)
+    0x080729ab   0x080729ab   0x00000001   PAD
+    0x080729ac   0x080729ac   0x00000004   Data   RO        10134    .constdata          mc_w.l(ctype_o.o)
+    0x080729b0   0x080729b0   0x00000072   Data   RO         8453    .conststring        bsp_key.o
+    0x08072a22   0x08072a22   0x00000002   PAD
+    0x08072a24   0x08072a24   0x00000020   Data   RO        10175    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08072a4c, Size: 0x00026578, Max: 0x00030000, ABSOLUTE, COMPRESSED[0x00000174])
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08072a44, Size: 0x00026578, Max: 0x00030000, ABSOLUTE, COMPRESSED[0x00000174])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -7058,7 +7058,7 @@ Image component sizes
         98          0          0          0          0       3822   stm32f4xx_spi.o
        786         96          0          0          0       9706   stm32f4xx_tim.o
        516         42          0          0          0       7518   stm32f4xx_usart.o
-       884        352          0          0          0        823   sysinfo.o
+       876        344          0          0          0        823   sysinfo.o
        948        254          0          0          0        999   system.o
        300         36          0         20          0     382005   system_stm32f4xx.o
      18350       1336          0         88         96      44481   touchscreen.o
@@ -7074,7 +7074,7 @@ Image component sizes
         64          8          0         28          0      30120   usbd_usr.o
 
     ----------------------------------------------------------------------
-    180164      14814     282938        828     156204    1027077   Object Totals
+    180156      14806     282938        828     156204    1027077   Object Totals
          0          0         32          0          0          0   (incl. Generated)
        102          0          3         14          7          0   (incl. Padding)
 
@@ -7159,15 +7159,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-    186508      15006     283072        844     156204     976613   Grand Totals
-    186508      15006     283072        372     156204     976613   ELF Image Totals (compressed)
-    186508      15006     283072        372          0          0   ROM Totals
+    186500      14998     283072        844     156204     976613   Grand Totals
+    186500      14998     283072        372     156204     976613   ELF Image Totals (compressed)
+    186500      14998     283072        372          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)               469580 ( 458.57kB)
+    Total RO  Size (Code + RO Data)               469572 ( 458.57kB)
     Total RW  Size (RW Data + ZI Data)            157048 ( 153.37kB)
-    Total ROM Size (Code + RO Data + RW Data)     469952 ( 458.94kB)
+    Total ROM Size (Code + RO Data + RW Data)     469944 ( 458.93kB)
 
 ==============================================================================
 
