@@ -420,7 +420,7 @@ void BASIC_TIM_IRQHandler (void)
 ////			}
 ////			usave = 0;
 //		}
-		if(usbstatus == CONNECTED)
+		if(usbstatus == CONNECTED && trigflag == 1)
 		{
 			syscount++;
 			if(syscount > 92)
@@ -429,6 +429,7 @@ void BASIC_TIM_IRQHandler (void)
 				syscount = 0;
 			}
 		}else{
+			ucount=0;
 			syscount = 0;
 		}
 		if(key_value == 0xFF && dimflag == 0)
