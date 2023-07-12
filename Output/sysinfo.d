@@ -2,7 +2,7 @@
 ..\..\output\sysinfo.o: ..\..\User\./led/bsp_led.h
 ..\..\output\sysinfo.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 ..\..\output\sysinfo.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
-..\..\output\sysinfo.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\sysinfo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\sysinfo.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
 ..\..\output\sysinfo.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
 ..\..\output\sysinfo.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
@@ -40,14 +40,14 @@
 ..\..\output\sysinfo.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
 ..\..\output\sysinfo.o: ..\..\User\./lcd/bsp_lcd.h
 ..\..\output\sysinfo.o: ..\..\User\./sdram/bsp_sdram.h
-..\..\output\sysinfo.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\sysinfo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\sysinfo.o: ..\..\User\./font/fonts.h
 ..\..\output\sysinfo.o: ..\..\User\./key/bsp_key.h
 ..\..\output\sysinfo.o: ..\..\User\./beep/bsp_beep.h
 ..\..\output\sysinfo.o: ..\..\User\./tim/bsp_basic_tim.h
 ..\..\output\sysinfo.o: ..\..\User\jk508.h
-..\..\output\sysinfo.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\sysinfo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\..\output\sysinfo.o: ..\..\User\FATFS\ff.h
 ..\..\output\sysinfo.o: ..\..\User\FATFS\integer.h
 ..\..\output\sysinfo.o: ..\..\User\FATFS\ffconf.h
-..\..\output\sysinfo.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\sysinfo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

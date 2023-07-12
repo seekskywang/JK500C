@@ -1,6 +1,6 @@
 ..\..\output\fonts.o: ..\..\User\font\fonts.c
 ..\..\output\fonts.o: ..\..\User\./font/fonts.h
-..\..\output\fonts.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\fonts.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\fonts.o: ..\..\User\./flash/bsp_spi_flash.h
 ..\..\output\fonts.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 ..\..\output\fonts.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
@@ -39,4 +39,4 @@
 ..\..\output\fonts.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmc.h
 ..\..\output\fonts.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_ltdc.h
 ..\..\output\fonts.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
-..\..\output\fonts.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\fonts.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

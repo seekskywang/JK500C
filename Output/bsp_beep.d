@@ -2,7 +2,7 @@
 ..\..\output\bsp_beep.o: ..\..\User\./beep/bsp_beep.h
 ..\..\output\bsp_beep.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 ..\..\output\bsp_beep.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
-..\..\output\bsp_beep.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\bsp_beep.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\bsp_beep.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
 ..\..\output\bsp_beep.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
 ..\..\output\bsp_beep.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h

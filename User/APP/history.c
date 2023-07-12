@@ -56,11 +56,11 @@ extern union
 
 void page_his(void)
 {
-	range = (YHLIMIT - YLLIMIT) / 7;
-	enrate = 350/(float)(YHLIMIT - YLLIMIT);
+	
 	u8 i;
 	u16 j;
-	
+	range = (YHLIMIT - YLLIMIT) / 7;
+	enrate = 350/(float)(YHLIMIT - YLLIMIT);
 	
 	
 	

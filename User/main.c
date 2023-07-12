@@ -295,7 +295,7 @@ void JumpBoot(u8 flag)
 int main(void)
 
 {
-	NVIC_SetVectorTable(NVIC_VectTab_FLASH, 0x00000);
+
 	static u8 powerstat;
 	uint8_t  buf[0x40];
 //	static u8 ledstat;
@@ -307,6 +307,7 @@ int main(void)
 	static u16 usavecount;
 	static u16 sendcount;
 	static u8 touched;
+		NVIC_SetVectorTable(NVIC_VectTab_FLASH, 0x00000);
 //	u8 res;
   /*!< At this stage the microcontroller clock setting is already configured, 
   this is done through SystemInit() function which is called from startup

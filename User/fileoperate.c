@@ -250,8 +250,9 @@ void Format_SD(void)
 void Creat_New_Folder(void)
 {
 //	res_sd = f_mount(&fs,"0:",1);
-	memset(filename,0,100);
+	
 	static u8  testcount;
+	memset(filename,0,100);
 	if(res_sd == FR_NO_FILESYSTEM)
 	{
 		DrawInstruction("加载文件系统失败，请重新格式化");

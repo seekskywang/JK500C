@@ -3,7 +3,7 @@
 ..\..\output\filesys.o: ..\..\User\./ch376/ch376.h
 ..\..\output\filesys.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 ..\..\output\filesys.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
-..\..\output\filesys.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\filesys.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\filesys.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
 ..\..\output\filesys.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
 ..\..\output\filesys.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
@@ -39,8 +39,8 @@
 ..\..\output\filesys.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmc.h
 ..\..\output\filesys.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_ltdc.h
 ..\..\output\filesys.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
-..\..\output\filesys.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\..\output\filesys.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\filesys.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\filesys.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\..\output\filesys.o: ..\..\User\./ch376/ch376.h
 ..\..\output\filesys.o: ..\..\User\jk508.h
 ..\..\output\filesys.o: ..\..\User\FATFS\ff.h

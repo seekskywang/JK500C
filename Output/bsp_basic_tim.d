@@ -2,7 +2,7 @@
 ..\..\output\bsp_basic_tim.o: ..\..\User\./tim/bsp_basic_tim.h
 ..\..\output\bsp_basic_tim.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 ..\..\output\bsp_basic_tim.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
-..\..\output\bsp_basic_tim.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\bsp_basic_tim.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\bsp_basic_tim.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
 ..\..\output\bsp_basic_tim.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
 ..\..\output\bsp_basic_tim.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
@@ -39,14 +39,14 @@
 ..\..\output\bsp_basic_tim.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_ltdc.h
 ..\..\output\bsp_basic_tim.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
 ..\..\output\bsp_basic_tim.o: ..\..\User\./usart/bsp_debug_usart.h
-..\..\output\bsp_basic_tim.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\bsp_basic_tim.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\bsp_basic_tim.o: ..\..\User\./key/bsp_key.h
 ..\..\output\bsp_basic_tim.o: ..\..\User\./lcd/bsp_lcd.h
 ..\..\output\bsp_basic_tim.o: ..\..\User\./sdram/bsp_sdram.h
 ..\..\output\bsp_basic_tim.o: ..\..\User\./font/fonts.h
 ..\..\output\bsp_basic_tim.o: ..\..\User\./ch376/ch376.h
-..\..\output\bsp_basic_tim.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\..\output\bsp_basic_tim.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\bsp_basic_tim.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\bsp_basic_tim.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\..\output\bsp_basic_tim.o: ..\..\USBD_FS_HID\usbd_hid_core.h
 ..\..\output\bsp_basic_tim.o: ..\..\USBD_FS_Lib\USBD_inc\usbd_ioreq.h
 ..\..\output\bsp_basic_tim.o: ..\..\USBD_FS_Lib\USBD_inc\usbd_def.h

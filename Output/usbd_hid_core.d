@@ -6,7 +6,7 @@
 ..\..\output\usbd_hid_core.o: ..\..\USBD_FS_Lib\USBD_inc\usb_conf.h
 ..\..\output\usbd_hid_core.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 ..\..\output\usbd_hid_core.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
-..\..\output\usbd_hid_core.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\usbd_hid_core.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\usbd_hid_core.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
 ..\..\output\usbd_hid_core.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
 ..\..\output\usbd_hid_core.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h

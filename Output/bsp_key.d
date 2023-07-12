@@ -2,7 +2,7 @@
 ..\..\output\bsp_key.o: ..\..\User\./key/bsp_key.h
 ..\..\output\bsp_key.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 ..\..\output\bsp_key.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
-..\..\output\bsp_key.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\bsp_key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\bsp_key.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
 ..\..\output\bsp_key.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
 ..\..\output\bsp_key.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
@@ -40,15 +40,15 @@
 ..\..\output\bsp_key.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
 ..\..\output\bsp_key.o: ..\..\User\./lcd/bsp_lcd.h
 ..\..\output\bsp_key.o: ..\..\User\./sdram/bsp_sdram.h
-..\..\output\bsp_key.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\bsp_key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\bsp_key.o: ..\..\User\./font/fonts.h
 ..\..\output\bsp_key.o: ..\..\User\./beep/bsp_beep.h
 ..\..\output\bsp_key.o: ..\..\User\./flash/bsp_spi_flash.h
 ..\..\output\bsp_key.o: ..\..\User\./tim/bsp_basic_tim.h
 ..\..\output\bsp_key.o: ..\..\User\./RTC/bsp_rtc.h
 ..\..\output\bsp_key.o: ..\..\User\./ch376/ch376.h
-..\..\output\bsp_key.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\..\output\bsp_key.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\bsp_key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\bsp_key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\..\output\bsp_key.o: ..\..\User\./FILESYS/FILESYS.h
 ..\..\output\bsp_key.o: ..\..\User\./ch376/ch376.h
 ..\..\output\bsp_key.o: ..\..\User\jk508.h

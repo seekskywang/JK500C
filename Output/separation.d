@@ -2,7 +2,7 @@
 ..\..\output\separation.o: ..\..\User\./led/bsp_led.h
 ..\..\output\separation.o: ..\..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 ..\..\output\separation.o: ..\..\Libraries\CMSIS\Include\core_cm4.h
-..\..\output\separation.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\separation.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\separation.o: ..\..\Libraries\CMSIS\Include\core_cmInstr.h
 ..\..\output\separation.o: ..\..\Libraries\CMSIS\Include\core_cmFunc.h
 ..\..\output\separation.o: ..\..\Libraries\CMSIS\Include\core_cmSimd.h
@@ -40,14 +40,14 @@
 ..\..\output\separation.o: ..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h
 ..\..\output\separation.o: ..\..\User\./lcd/bsp_lcd.h
 ..\..\output\separation.o: ..\..\User\./sdram/bsp_sdram.h
-..\..\output\separation.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\separation.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\separation.o: ..\..\User\./font/fonts.h
 ..\..\output\separation.o: ..\..\User\./key/bsp_key.h
 ..\..\output\separation.o: ..\..\User\./beep/bsp_beep.h
 ..\..\output\separation.o: ..\..\User\./tim/bsp_basic_tim.h
 ..\..\output\separation.o: ..\..\User\jk508.h
-..\..\output\separation.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\separation.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\..\output\separation.o: ..\..\User\FATFS\ff.h
 ..\..\output\separation.o: ..\..\User\FATFS\integer.h
 ..\..\output\separation.o: ..\..\User\FATFS\ffconf.h
-..\..\output\separation.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\separation.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

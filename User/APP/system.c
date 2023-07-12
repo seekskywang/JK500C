@@ -49,7 +49,7 @@ extern union
 
 void page_sys(void)
 {
-	
+	char buf[10];
   /*初始化后默认使用前景层*/
 	LCD_SetLayer(LCD_FOREGROUND_LAYER); 
 	/*默认设置不透明	，该函数参数为不透明度，范围 0-0xff ，0为全透明，0xff为不透明*/
@@ -58,7 +58,7 @@ void page_sys(void)
 	/*经过LCD_SetLayer(LCD_FOREGROUND_LAYER)函数后，
 	以下液晶操作都在前景层刷新，除非重新调用过LCD_SetLayer函数设置背景层*/
 	
-	char buf[10];
+	
 	
 	DrawMenu();
 	Drawsysmenu();
