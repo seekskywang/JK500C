@@ -3027,7 +3027,7 @@ void TempDisplay(void)
 				DISP_CNL_S(340+20,585,(uint8_t*)buf);
 			}else{
 				LCD_SetColors(LCD_COLOR_BACK,LCD_COLOR_BACK);
-				LCD_DrawFullRect(585,320+20,48,16);
+				LCD_DrawFullRect(585,340+20,48,16);
 			}
 			
 		}
@@ -3208,6 +3208,8 @@ void Read_flag(void)
 
 void UsbDataHandle(void)
 {
+	RTC_DateTypeDef RTC_DateStructure;
+	RTC_TimeTypeDef RTC_TimeStructure;
 	u8 i;
 //	u8 j;
 	uint16_t sendcrc;
@@ -3657,8 +3659,7 @@ void UsbDataHandle(void)
 					usbsendbuf[4] = 0x00;
 					usbsendbuf[5] = 0x00;
 					
-					RTC_DateTypeDef RTC_DateStructure;
-					RTC_TimeTypeDef RTC_TimeStructure;
+					
 					
 					YEAR = usbbuf[8];
 					MONTH = usbbuf[9];
@@ -3937,8 +3938,9 @@ u8 PowerOffDetect(void)
 //检测到关机后的处理
 void PowerOffHandle(void)
 {
-	page_flag = poweroff;
 	static u8 offflag;
+	page_flag = poweroff;
+	
 	DrawPowOff();
 	if(offflag == 0)
 	{

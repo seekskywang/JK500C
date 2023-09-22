@@ -1567,12 +1567,13 @@ void Search_Bit(void)
 {
 	u16 i;
 	u32 ymd;
+	char timetemp[100];
 	u8 y1,y2,y3,m1,d1;
 	y1 = (data[0]-48)*10+(data[1]-48);
 	y2 = (data[2]-48)*10+(data[3]-48);
 	m1 = (data[4]-48)*10+data[5]-48;
 	d1 = (data[6]-48)*10+data[7]-48; 
-	char timetemp[100];
+	
 	if(bit_flag == 9)
 	{		
 		for(i=1;i<1000;i++)

@@ -89,9 +89,9 @@ void page_sysinfo(void)
 	{
 		if(CHNUM == 8)
 		{
-			LCD_DisplayStringLine(50,170,"500C");
+			LCD_DisplayStringLine(50,170,"JK500C");
 		}else if(CHNUM == 16){
-			LCD_DisplayStringLine(50,170,"500C");
+			LCD_DisplayStringLine(50,170,"JK500C");
 		}
 		LCD_DisplayStringLine(94,170,"手持多路温度测试仪");
 		LCD_DisplayStringLine(130,170,"T,K,J,N,E,S,R,B");
@@ -105,9 +105,9 @@ void page_sysinfo(void)
 	}else{
 		if(CHNUM == 8)
 		{		
-			LCD_DisplayStringLine(50,220,"500C Handheld");
+			LCD_DisplayStringLine(50,220,"JK500C Handheld");
 		}else if(CHNUM == 16){
-			LCD_DisplayStringLine(50,170,"500C Handheld");
+			LCD_DisplayStringLine(50,170,"JK500C Handheld");
 		}
 		LCD_DisplayStringLine(90,220,"Muti-Channel Temp Meter");
 		LCD_DisplayStringLine(130,220,"T,K,J,N,E,S,R,B");
