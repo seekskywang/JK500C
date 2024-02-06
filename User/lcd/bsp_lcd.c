@@ -3236,7 +3236,7 @@ static void LCD_GPIO_Config(void)
 
  /* 红色数据线 */
   GPIO_InitStruct.GPIO_Pin = LTDC_R0_GPIO_PIN;                             
-  GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
   GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF;
   GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
   GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
@@ -3374,7 +3374,7 @@ static void LCD_GPIO_Config(void)
 //  GPIO_ResetBits(LTDC_BL_GPIO_PORT,LTDC_BL_GPIO_PIN);
 
 GPIO_InitStruct.GPIO_Pin = LTDC_LR_GPIO_PIN;
- GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
+ GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
  GPIO_InitStruct.GPIO_Mode = GPIO_Mode_OUT;
  GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
  GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;
@@ -3382,7 +3382,7 @@ GPIO_InitStruct.GPIO_Pin = LTDC_LR_GPIO_PIN;
  GPIO_Init(LTDC_LR_GPIO_PORT, &GPIO_InitStruct);
   //UD,上下方向
  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_13;
- GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
+ GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
  GPIO_InitStruct.GPIO_Mode = GPIO_Mode_OUT;
  GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
  GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;
